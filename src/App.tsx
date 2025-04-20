@@ -15,6 +15,7 @@ import AITools from "./pages/AITools";
 import AILabs from "./pages/AILabs";
 import AIForAll from "./pages/AIForAll";
 import News from "./pages/News";
+import Layout from "./Layout";
 
 const queryClient = new QueryClient();
 
@@ -26,7 +27,8 @@ const App = () => (
         <Sonner />
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Index />} />
+          <Route path='/' element={<Layout/>}>
+            <Route index element={<Index />} />
             <Route path="/about" element={<About />} />
             <Route path="/assemblies" element={<Assemblies />} />
             <Route path="/ai-pro" element={<AIPro />} />
@@ -37,6 +39,7 @@ const App = () => (
             <Route path="/news" element={<News />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
+            </Route>
           </Routes>
         </BrowserRouter>
       </TooltipProvider>
