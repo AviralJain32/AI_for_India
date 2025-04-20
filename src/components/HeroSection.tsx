@@ -32,7 +32,7 @@ const HeroSection = () => {
         
         <div className="lg:w-1/2">
           <StaticImage
-            src="/public/images/index.jpg"
+            src="/images/index.jpg"
             alt="AI for India Vision"
             className="rounded-2xl shadow-2xl hover-scale h-[500px]"
           />
