@@ -6,6 +6,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Monitor, Book, Award, Users, BarChart, Globe } from 'lucide-react';
 import IntroSection from '@/components/IntroSection';
+import CollegeRequirementsSection from '@/components/AIlabsForColleges';
+import SchoolRequirements from '@/components/AILabsForSchools';
 
 const FeatureCard = ({ title, description, icon: Icon, color }) => {
   return (
@@ -110,7 +112,9 @@ const AILabs = () => {
             </div>
           </div>
         </section>
-        
+
+        <CollegeRequirementsSection></CollegeRequirementsSection>
+        <SchoolRequirements/>
         {/* Impact Goals */}
         <section className="py-20 bg-dark-navy">
           <div className="container mx-auto px-4">

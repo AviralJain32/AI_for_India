@@ -6,6 +6,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle, ScrollText, Users, BookOpen, Globe, Award } from 'lucide-react';
 import IntroSection from '@/components/IntroSection';
+import AITrainingProgram from '@/components/AITrainingProgramForCollegeTeacher';
+import AITrainingSchool from '@/components/AITrainingSchoolTeacher';
 
 const FeatureCard = ({ title, description, icon: Icon, color }) => {
   return (
@@ -110,6 +112,13 @@ const AIPro = () => {
             </div>
           </div>
         </section>
+
+        <AITrainingProgram/>
+
+        <div className='bg-deep-purple'>
+          <AITrainingSchool/>
+        </div>
+
         
         {/* Why Choose Us */}
         <section className="py-20 bg-dark-navy">
