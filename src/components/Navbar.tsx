@@ -48,13 +48,14 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         <Link to="/" className="flex items-center space-x-2">
-          <div className="h-8 w-8 rounded-md bg-gradient-to-br from-saffron to-neon-blue flex items-center justify-center">
+          {/* <div className="h-8 w-8 rounded-md bg-gradient-to-br from-saffron to-neon-blue flex items-center justify-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white">
               <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
               <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
               <path d="M17.5 6.5h.01"></path>
             </svg>
-          </div>
+          </div> */}
+          <img src="/images/Logo.jpg" alt="Logo" height={30} width={40} className='rounded-lg'/>
           <span className="text-xl font-bold">
             <span className="text-saffron">AI</span>
             <span className="text-white"> FOR </span>
