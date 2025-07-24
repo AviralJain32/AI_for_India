@@ -27,10 +27,11 @@ const Index = () => {
       <main>
         <HeroSection />
         <StatsSection />
+        <HackathonsSection />
+
         {/* <CountdownTimer targetDate={summitDate} /> */}
         {/* <SpeakersSection /> */}
         <WomenInAISection />
-        <HackathonsSection />
       </main>
       <Footer />
     </div>
