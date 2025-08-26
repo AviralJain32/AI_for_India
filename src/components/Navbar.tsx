@@ -55,11 +55,11 @@ const Navbar = () => {
               <path d="M17.5 6.5h.01"></path>
             </svg>
           </div> */}
-          <img src="/images/Logo.jpg" alt="Logo" height={30} width={40} className='rounded-lg'/>
+          <img src="/Logo.jpg" alt="Logo" height={30} width={40} className='rounded-lg'/>
           <span className="text-xl font-bold">
-            <span className="text-saffron">AI</span>
-            <span className="text-white"> FOR </span>
-            <span className="text-india-green">INDIA</span>
+            <span className="text-white">AFI Edutech</span>
+            {/* <span className="text-white"> FOR </span>
+            <span className="text-india-green">INDIA</span> */}
           </span>
         </Link>
 

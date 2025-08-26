@@ -13,9 +13,9 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 relative z-10 flex flex-col lg:flex-row items-center gap-12 pt-32">
         <div className="lg:w-1/2 text-center lg:text-left">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-            <span className="text-white">AI </span>
-            <span className="text-saffron">FOR </span>
-            <span className="text-india-green">INDIA</span>
+            <span className="text-white">AFI Edutech</span>
+            {/* <span className="text-saffron">FOR </span>
+            <span className="text-india-green">INDIA</span> */}
           </h1>
           <p className="text-xl md:text-2xl text-white/80 mb-8">
             Join India's AI Revolution: A Premier Summit for Innovators, Leaders, and Visionaries.
@@ -33,7 +33,7 @@ const HeroSection = () => {
         <div className="lg:w-1/2">
           <StaticImage
             src="/images/index.jpg"
-            alt="AI for India Vision"
+            alt="AFI Edutech Vision"
             className="rounded-2xl shadow-2xl hover-scale h-[500px]"
           />
         </div>

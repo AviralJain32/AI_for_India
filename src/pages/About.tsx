@@ -85,7 +85,7 @@ const About = () => {
               
               <div className="glass-card p-8 rounded-xl">
                 <p className="text-white/90 leading-relaxed text-lg mb-6">
-                  AI for India is on a mission to make Artificial Intelligence accessible, innovative, and inclusive across India. We are building a nationwide platform that unites startups, students, researchers, and professionals to collaborate, learn, and create impact through AI.
+                  AFI Edutech is on a mission to make Artificial Intelligence accessible, innovative, and inclusive across India. We are building a nationwide platform that unites startups, students, researchers, and professionals to collaborate, learn, and create impact through AI.
                 </p>
                 <p className="text-white/90 leading-relaxed text-lg">
                   Through conferences, training programs, competitions, startup showcases, curated toolkits, AI simulators, and inclusive outreach efforts, we're not just building a tech platform—we're nurturing a movement.
