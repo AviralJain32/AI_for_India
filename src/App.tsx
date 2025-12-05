@@ -16,6 +16,7 @@ import AILabs from "./pages/AILabs";
 import AIForAll from "./pages/AIForAll";
 import News from "./pages/News";
 import Layout from "./Layout";
+import AIConference from "./pages/AIConference";
 
 const queryClient = new QueryClient();
 
@@ -37,6 +38,7 @@ const App = () => (
             <Route path="/ai-labs" element={<AILabs />} />
             <Route path="/ai-for-all" element={<AIForAll />} />
             <Route path="/news" element={<News />} />
+            <Route path="/conference" element={<AIConference />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
             </Route>

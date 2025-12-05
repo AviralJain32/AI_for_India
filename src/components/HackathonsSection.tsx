@@ -190,7 +190,7 @@ const HackathonsSection = () => {
           <HackathonCard
             title="OneEarth International Hackathon 2025"
             date="October 24-25, 2025"
-            prize="$1,000+"
+            prize="£2500"
             teamSize="2-4 Members"
             mode="New Delhi, India"
             color="bg-neon-blue"
