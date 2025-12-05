@@ -254,7 +254,7 @@ const Navbar = () => {
               <p className="font-semibold text-saffron">Hackathon</p>
 
               <Link
-                to="/hackathon/one-earth"
+                to="https://www.oneearthhackathon.com/"
                 className="hover:text-saffron"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
@@ -262,7 +262,7 @@ const Navbar = () => {
               </Link>
 
               <Link
-                to="/hackathon/hacksecurex"
+                to="https://www.hacksecurex.com/"
                 className="hover:text-saffron"
                 onClick={() => setIsMobileMenuOpen(false)}
               >

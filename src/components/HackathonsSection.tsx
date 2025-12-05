@@ -191,21 +191,21 @@ const HackathonsSection = () => {
             title="OneEarth International Hackathon 2025"
             date="October 24-25, 2025"
             prize="$1,000+"
-            teamSize="48 Hours"
+            teamSize="2-4 Members"
             mode="New Delhi, India"
             color="bg-neon-blue"
             delay="0s"
             url="https://oneearth-international-hackathon.aiforindia.co.in/"
           />
           <HackathonCard
-            title="AI for Social Good Ideathon 2025"
-            date="November 29, 2025"
-            prize="$1,000+"
-            teamSize="2-5 Members"
+            title="HackSecureX International Hackathon 2026"
+            date="January 16-17, 2026"
+            prize="$2000"
+            teamSize="2-4 Members"
             mode="Online"
             color="bg-neon-purple"
             delay="0.1s"
-            url="https://ai-for-social-good.aiforindia.co.in/"
+            url="https://www.hacksecurex.com/"
           />
         </div>
       </div>
