@@ -190,6 +190,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Monitor, Book, Award, Users, BarChart, Globe, Layers, Rocket, Cpu, School } from 'lucide-react';
 import IntroSection from '@/components/IntroSection';
+import ImageCarousel from '@/components/CarousalAILabs';
 
 const FeatureCard = ({ title, description, icon: Icon, color }) => {
   return (
@@ -204,6 +205,15 @@ const FeatureCard = ({ title, description, icon: Icon, color }) => {
     </Card>
   );
 };
+
+  // Image list
+  const carouselImages = [
+  { src: "/ai-labs/csl_cover.png", alt: "Composite Skill Lab Cover" },
+  { src: "/ai-labs/nano_lab.png", alt: "AI Nano Lab Setup" },
+  { src: "/ai-labs/macro_lab.png", alt: "AI Macro Lab Setup" },
+  { src: "/ai-labs/students_projects.png", alt: "Students Working on AI Projects" },
+  { src: "/ai-labs/classroom_lab.png", alt: "AI Classroom Lab Environment" },
+];
 
 const AILabs = () => {
   return (
@@ -227,6 +237,16 @@ const AILabs = () => {
           </div>
         </section>
 
+        <section className="py-20 bg-deep-purple relative overflow-hidden">
+          <div className="container mx-auto px-4 relative z-10 flex justify-center">
+            <div className="w-full max-w-5xl">
+              {/* <CarouselAILabs /> */}
+              <ImageCarousel images={carouselImages} />
+
+            </div>
+          </div>
+        </section>
+
         {/* INTRO SECTION */}
         <IntroSection
           para1={
@@ -235,7 +255,7 @@ const AILabs = () => {
           para2={
             "Students explore structured AI skill tracks, participate in competitions, build STEM projects, and gain certifications—preparing them for the future of innovation, research, and entrepreneurship."
           }
-          srcOfImage={"/images/ai_labs.jpg"}
+          srcOfImage={"/images/ai_labs.png"}
           altText={"AI Labs by AFI Edutech"}
         />
 
@@ -396,6 +416,47 @@ const AILabs = () => {
             </div>
           </div>
         </section>
+
+        {/* DOWNLOAD BROCHURES */}
+<section className="py-20 bg-dark-navy">
+  <div className="container mx-auto px-4 text-center">
+    <h2 className="text-3xl md:text-4xl text-white font-bold mb-10">
+      View <span className="text-neon-blue">Brochures</span>
+    </h2>
+
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+
+      <a
+        href="https://drive.google.com/file/d/1LxbkHmuG3fjFcaEZf3M3Eye0l0wYNqJp/view?usp=sharing"
+        target="_blank"
+        className="glass-card p-6 rounded-xl hover-scale text-white"
+      >
+        <h3 className="text-xl font-semibold mb-2">Main Brochure</h3>
+        <p className="text-white/70">Overview of AI Labs, Programs & Offerings</p>
+      </a>
+
+      <a
+        href="https://drive.google.com/file/d/1ELhVB7itigK3juuYgD4mPpkwCPVStK_a/view?usp=sharing"
+        target="_blank"
+        className="glass-card p-6 rounded-xl hover-scale text-white"
+      >
+        <h3 className="text-xl font-semibold mb-2">Composite Skill Lab</h3>
+        <p className="text-white/70">CBSE Modules, Robotics, Electronics, Space Tech</p>
+      </a>
+
+      <a
+        href="https://drive.google.com/file/d/142iEQGF32jAgdetfgoZWcgXwXNapYXcY/view?usp=sharing"
+        target="_blank"
+        className="glass-card p-6 rounded-xl hover-scale text-white"
+      >
+        <h3 className="text-xl font-semibold mb-2">AI Nano & Macro Labs</h3>
+        <p className="text-white/70">Lab Setup, Kits, Tools, and Costing</p>
+      </a>
+
+    </div>
+  </div>
+</section>
+
 
         {/* CALL TO ACTION */}
         <section className="py-20 bg-deep-purple relative overflow-hidden">
