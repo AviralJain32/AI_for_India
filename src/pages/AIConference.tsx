@@ -41,12 +41,12 @@ const AIConferenceCard = () => {
               <div className="flex items-center gap-3">
                 <Globe className="text-saffron w-6 h-6" />
                 <a 
-                  href="https://icstss.vercel.app/" 
+                  href="https://www.cvs3-conference.com/" 
                   target="_blank" 
                   rel="noreferrer" 
                   className="underline hover:text-white"
                 >
-                  https://icstss.vercel.app/
+                  hhttps://www.cvs3-conference.com/
                 </a>
               </div>
 
