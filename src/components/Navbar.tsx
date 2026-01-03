@@ -166,6 +166,7 @@ const Navbar = () => {
     { name: "AI Challenge", href: "/ai-challenge" },
     { name: "AI Labs", href: "/ai-labs" },
     { name: "News", href: "/news" },
+    { name: "Advisory Board", href: "/board" },
   ];
 
   return (
