@@ -13,10 +13,10 @@ const AssemblyCard = ({ title, description, icon: Icon, color }) => {
     <Card className="glass-card border-0 hover-scale hover-glow">
       <CardContent className="p-6">
         <div className={`w-12 h-12 rounded-full ${color} flex items-center justify-center mb-4`}>
-          <Icon className="h-6 w-6 text-white" />
+          <Icon className="h-6 w-6 text-black" />
         </div>
-        <h3 className="text-xl font-semibold mb-4 text-white">{title}</h3>
-        <p className="text-white/80">{description}</p>
+        <h3 className="text-xl font-semibold mb-4 text-black">{title}</h3>
+        <p className="text-black/80">{description}</p>
       </CardContent>
     </Card>
   );
@@ -25,7 +25,7 @@ const AssemblyCard = ({ title, description, icon: Icon, color }) => {
 const ThemeCard = ({ title, color }) => {
   return (
     <div className={`glass-card rounded-xl p-4 ${color} bg-opacity-10 hover-scale`}>
-      <h3 className="text-lg font-medium text-white">{title}</h3>
+      <h3 className="text-lg font-medium text-black">{title}</h3>
     </div>
   );
 };
@@ -43,10 +43,10 @@ const Assemblies = () => {
           <div className="container mx-auto px-4 relative z-10">
             <div className="text-center max-w-3xl mx-auto">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-                <span className="text-white">AI </span>
+                <span className="text-black">AI </span>
                 <span className="text-saffron">Assemblies</span>
               </h1>
-              <p className="text-xl md:text-2xl text-white/80 mb-8">Uniting Minds. Shaping Futures. Building India's AI Narrative.</p>
+              <p className="text-xl md:text-2xl text-black/80 mb-8">Uniting Minds. Shaping Futures. Building India's AI Narrative.</p>
             </div>
           </div>
         </section>
@@ -70,7 +70,7 @@ const Assemblies = () => {
           
           <div className="container mx-auto px-4 relative z-10">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-              <span className="text-white">Key Event </span>
+              <span className="text-black">Key Event </span>
               <span className="text-saffron">Formats</span>
             </h2>
             
@@ -110,7 +110,7 @@ const Assemblies = () => {
         <section className="py-20 bg-dark-navy">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-              <span className="text-white">Focus </span>
+              <span className="text-black">Focus </span>
               <span className="text-neon-blue">Themes</span>
             </h2>
             
@@ -131,7 +131,7 @@ const Assemblies = () => {
           
           <div className="container mx-auto px-4 relative z-10">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-              <span className="text-white">Why </span>
+              <span className="text-black">Why </span>
               <span className="text-saffron">Attend</span>
             </h2>
             
@@ -140,40 +140,40 @@ const Assemblies = () => {
                 <div className="w-16 h-16 rounded-full bg-saffron/20 flex items-center justify-center mx-auto mb-4">
                   <Users className="h-8 w-8 text-saffron" />
                 </div>
-                <h3 className="text-white font-medium text-lg mb-2">Engage with Thought Leaders</h3>
-                <p className="text-white/70">from academia, industry, and government</p>
+                <h3 className="text-black font-medium text-lg mb-2">Engage with Thought Leaders</h3>
+                <p className="text-black/70">from academia, industry, and government</p>
               </div>
               
               <div className="glass-card p-6 rounded-xl text-center hover-scale">
                 <div className="w-16 h-16 rounded-full bg-neon-blue/20 flex items-center justify-center mx-auto mb-4">
                   <MessageSquare className="h-8 w-8 text-neon-blue" />
                 </div>
-                <h3 className="text-white font-medium text-lg mb-2">Participate in Dialogues</h3>
-                <p className="text-white/70">that shape India's AI trajectory</p>
+                <h3 className="text-black font-medium text-lg mb-2">Participate in Dialogues</h3>
+                <p className="text-black/70">that shape India's AI trajectory</p>
               </div>
               
               <div className="glass-card p-6 rounded-xl text-center hover-scale">
                 <div className="w-16 h-16 rounded-full bg-neon-purple/20 flex items-center justify-center mx-auto mb-4">
                   <Landmark className="h-8 w-8 text-neon-purple" />
                 </div>
-                <h3 className="text-white font-medium text-lg mb-2">Showcase Innovations</h3>
-                <p className="text-white/70">and build powerful partnerships</p>
+                <h3 className="text-black font-medium text-lg mb-2">Showcase Innovations</h3>
+                <p className="text-black/70">and build powerful partnerships</p>
               </div>
               
               <div className="glass-card p-6 rounded-xl text-center hover-scale">
                 <div className="w-16 h-16 rounded-full bg-neon-teal/20 flex items-center justify-center mx-auto mb-4">
                   <Bookmark className="h-8 w-8 text-neon-teal" />
                 </div>
-                <h3 className="text-white font-medium text-lg mb-2">Gain Insights & Foresight</h3>
-                <p className="text-white/70">into India-centric AI trends and futures</p>
+                <h3 className="text-black font-medium text-lg mb-2">Gain Insights & Foresight</h3>
+                <p className="text-black/70">into India-centric AI trends and futures</p>
               </div>
             </div>
             
             <div className="text-center mt-16">
-              <Button className="bg-saffron hover:bg-saffron/80 text-white px-8 py-6 rounded-full text-lg hover-scale">
+              <Button className="bg-saffron hover:bg-saffron/80 text-black px-8 py-6 rounded-full text-lg hover-scale">
                 Get Involved
               </Button>
-              <p className="text-white/70 mt-4">Join us to shape a responsible, inclusive, and innovation-driven AI future for India.</p>
+              <p className="text-black/70 mt-4">Join us to shape a responsible, inclusive, and innovation-driven AI future for India.</p>
             </div>
           </div>
         </section>

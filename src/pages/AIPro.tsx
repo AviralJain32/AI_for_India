@@ -14,10 +14,10 @@ const FeatureCard = ({ title, description, icon: Icon, color }) => {
     <Card className="glass-card border-0 hover-scale hover-glow">
       <CardContent className="p-6">
         <div className={`w-12 h-12 rounded-full ${color} flex items-center justify-center mb-4`}>
-          <Icon className="h-6 w-6 text-white" />
+          <Icon className="h-6 w-6 text-black" />
         </div>
-        <h3 className="text-xl font-semibold mb-4 text-white">{title}</h3>
-        <p className="text-white/80">{description}</p>
+        <h3 className="text-xl font-semibold mb-4 text-black">{title}</h3>
+        <p className="text-black/80">{description}</p>
       </CardContent>
     </Card>
   );
@@ -27,9 +27,9 @@ const BenefitCard = ({ icon: Icon, title, color }) => {
   return (
     <div className="flex items-center space-x-3 glass-card p-4 rounded-xl hover-scale">
       <div className={`w-10 h-10 rounded-full ${color} flex items-center justify-center flex-shrink-0`}>
-        <Icon className="h-5 w-5 text-white" />
+        <Icon className="h-5 w-5 text-black" />
       </div>
-      <span className="text-white font-medium">{title}</span>
+      <span className="text-black font-medium">{title}</span>
     </div>
   );
 };
@@ -48,10 +48,10 @@ const AIPro = () => {
             <div className="text-center max-w-3xl mx-auto">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
                 <span className="text-saffron">AI </span>
-                <span className="text-white">Pro</span>
+                <span className="text-black">Pro</span>
               </h1>
-              <p className="text-xl md:text-2xl text-white/80 mb-8">Master AI with Our Industry-Focused Training Ecosystem</p>
-              <p className="text-lg text-white/70">Empower Your AI Journey with Hands-On Learning</p>
+              <p className="text-xl md:text-2xl text-black/80 mb-8">Master AI with Our Industry-Focused Training Ecosystem</p>
+              <p className="text-lg text-black/70">Empower Your AI Journey with Hands-On Learning</p>
             </div>
           </div>
         </section>
@@ -75,39 +75,39 @@ const AIPro = () => {
           
           <div className="container mx-auto px-4 relative z-10">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-              <span className="text-white">What We </span>
+              <span className="text-black">What We </span>
               <span className="text-neon-blue">Offer</span>
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="glass-card p-6 rounded-xl hover-scale">
                 <CheckCircle className="h-6 w-6 text-neon-blue mb-4" />
-                <h3 className="text-white text-xl font-medium mb-3">Structured AI Training Programs</h3>
-                <p className="text-white/70">Beginner to advanced courses aligned with industry needs</p>
+                <h3 className="text-black text-xl font-medium mb-3">Structured AI Training Programs</h3>
+                <p className="text-black/70">Beginner to advanced courses aligned with industry needs</p>
               </div>
               
               <div className="glass-card p-6 rounded-xl hover-scale">
                 <CheckCircle className="h-6 w-6 text-neon-blue mb-4" />
-                <h3 className="text-white text-xl font-medium mb-3">FDPs & Educator Enablement</h3>
-                <p className="text-white/70">Specialized content for faculty and academic institutions</p>
+                <h3 className="text-black text-xl font-medium mb-3">FDPs & Educator Enablement</h3>
+                <p className="text-black/70">Specialized content for faculty and academic institutions</p>
               </div>
               
               <div className="glass-card p-6 rounded-xl hover-scale">
                 <CheckCircle className="h-6 w-6 text-neon-blue mb-4" />
-                <h3 className="text-white text-xl font-medium mb-3">Workshops & Hands-On Labs</h3>
-                <p className="text-white/70">Focused skill-building sessions using our AI Simulator</p>
+                <h3 className="text-black text-xl font-medium mb-3">Workshops & Hands-On Labs</h3>
+                <p className="text-black/70">Focused skill-building sessions using our AI Simulator</p>
               </div>
               
               <div className="glass-card p-6 rounded-xl hover-scale">
                 <CheckCircle className="h-6 w-6 text-neon-blue mb-4" />
-                <h3 className="text-white text-xl font-medium mb-3">Live Webinars & Seminars</h3>
-                <p className="text-white/70">Interactions with AI experts and thought leaders</p>
+                <h3 className="text-black text-xl font-medium mb-3">Live Webinars & Seminars</h3>
+                <p className="text-black/70">Interactions with AI experts and thought leaders</p>
               </div>
               
               <div className="glass-card p-6 rounded-xl hover-scale">
                 <CheckCircle className="h-6 w-6 text-neon-blue mb-4" />
-                <h3 className="text-white text-xl font-medium mb-3">Capstone Projects & Certification</h3>
-                <p className="text-white/70">Showcase your skills with verified credentials</p>
+                <h3 className="text-black text-xl font-medium mb-3">Capstone Projects & Certification</h3>
+                <p className="text-black/70">Showcase your skills with verified credentials</p>
               </div>
             </div>
           </div>
@@ -124,7 +124,7 @@ const AIPro = () => {
         <section className="py-20 bg-dark-navy">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-              <span className="text-white">Why Choose </span>
+              <span className="text-black">Why Choose </span>
               <span className="text-saffron">Us</span>
             </h2>
             
@@ -163,13 +163,13 @@ const AIPro = () => {
           <div className="container mx-auto px-4 relative z-10">
             <div className="text-center max-w-2xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                <span className="text-white">Get Started </span>
+                <span className="text-black">Get Started </span>
                 <span className="text-saffron">Today</span>
               </h2>
-              <p className="text-lg text-white/80 mb-8">
+              <p className="text-lg text-black/80 mb-8">
                 Join a vibrant AI learning community and become a part of India's growing innovation ecosystem.
               </p>
-              <Button className="bg-saffron hover:bg-saffron/80 text-white px-8 py-6 rounded-full text-lg hover-scale">
+              <Button className="bg-saffron hover:bg-saffron/80 text-black px-8 py-6 rounded-full text-lg hover-scale">
                 Explore Programs
               </Button>
             </div>

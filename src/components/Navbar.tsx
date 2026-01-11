@@ -49,7 +49,7 @@
 //       <div className="container mx-auto px-4 flex items-center justify-between">
 //         <Link to="/" className="flex items-center space-x-2">
 //           {/* <div className="h-8 w-8 rounded-md bg-gradient-to-br from-saffron to-neon-blue flex items-center justify-center">
-//             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white">
+//             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-black">
 //               <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
 //               <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
 //               <path d="M17.5 6.5h.01"></path>
@@ -57,8 +57,8 @@
 //           </div> */}
 //           <img src="/Logo.jpg" alt="Logo" height={30} width={40} className='rounded-lg'/>
 //           <span className="text-xl font-bold">
-//             <span className="text-white">AFI Edutech</span>
-//             {/* <span className="text-white"> FOR </span>
+//             <span className="text-black">AFI Edutech</span>
+//             {/* <span className="text-black"> FOR </span>
 //             <span className="text-india-green">INDIA</span> */}
 //           </span>
 //         </Link>
@@ -70,7 +70,7 @@
 //               <Link
 //                 key={link.name}
 //                 to={link.href}
-//                 className="text-white hover:text-saffron transition-colors"
+//                 className="text-black hover:text-saffron transition-colors"
 //               >
 //                 {link.name}
 //               </Link>
@@ -84,7 +84,7 @@
 //           >
 //             {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
 //           </Button>
-//           <Button className="bg-saffron hover:bg-saffron/80 text-white">
+//           <Button className="bg-saffron hover:bg-saffron/80 text-black">
 //             Join Now
 //           </Button>
 //         </div>
@@ -109,13 +109,13 @@
 //                 <Link
 //                   key={link.name}
 //                   to={link.href}
-//                   className="text-white hover:text-saffron transition-colors py-2"
+//                   className="text-black hover:text-saffron transition-colors py-2"
 //                   onClick={() => setIsMobileMenuOpen(false)}
 //                 >
 //                   {link.name}
 //                 </Link>
 //               ))}
-//               <Button className="bg-saffron hover:bg-saffron/80 text-white w-full mt-4">
+//               <Button className="bg-saffron hover:bg-saffron/80 text-black w-full mt-4">
 //                 Join Now
 //               </Button>
 //             </nav>
@@ -173,30 +173,30 @@ const Navbar = () => {
     <header
       className={cn(
         "fixed top-0 left-0 w-full z-50 transition-all duration-300 py-4",
-        scrolled ? "bg-dark-navy/80 backdrop-blur-lg shadow-md" : "bg-transparent"
+        scrolled ? "bg-dark-navy/90 dark:bg-dark-navy/80 backdrop-blur-lg shadow-md" : "bg-transparent"
       )}
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-2">
           <img src="/Logo.jpg" alt="Logo" height={30} width={40} className="rounded-lg" />
-          <span className="text-xl font-bold text-white">AFI Edutech</span>
+          <span className="text-xl font-bold text-foreground">AFI Edutech</span>
         </Link>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-6">
           {/* Hackathon Dropdown */}
           <DropdownMenu>
-            <DropdownMenuTrigger className="text-white hover:text-saffron transition-colors font-medium">
+            <DropdownMenuTrigger className="text-foreground hover:text-saffron transition-colors font-medium">
               Hackathon
             </DropdownMenuTrigger>
 
-            <DropdownMenuContent className="w-64 bg-dark-navy text-white">
+            <DropdownMenuContent className="w-64 bg-white dark:bg-dark-navy text-foreground border border-foreground/10 shadow-xl">
               <DropdownMenuLabel className="text-saffron">Hackathons</DropdownMenuLabel>
               <DropdownMenuSeparator />
 
               <DropdownMenuItem asChild>
-                <Link to="/hackathon/one-earth">
+                <Link to="https://www.oneearthhackathon.com/">
                   <div>
                     <p className="font-semibold">🌍 One Earth Hackathon</p>
                     <p className="text-sm opacity-80">A global sustainability hackathon.</p>
@@ -205,7 +205,7 @@ const Navbar = () => {
               </DropdownMenuItem>
 
               <DropdownMenuItem asChild>
-                <Link to="/hackathon/hacksecurex">
+                <Link to="https://www.hacksecurex.com/">
                   <div>
                     <p className="font-semibold">🔐 HackSecureX</p>
                     <p className="text-sm opacity-80">Cybersecurity-focused innovation challenge.</p>
@@ -220,7 +220,7 @@ const Navbar = () => {
             <Link
               key={link.name}
               to={link.href}
-              className="text-white hover:text-saffron transition-colors"
+              className="text-foreground hover:text-saffron transition-colors"
             >
               {link.name}
             </Link>
@@ -231,7 +231,7 @@ const Navbar = () => {
             {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
           </Button>
 
-          <Button className="bg-saffron hover:bg-saffron/80 text-white">Join Now</Button>
+          <Button className="bg-saffron hover:bg-saffron/80 text-black">Join Now</Button>
         </div>
 
         {/* Mobile Menu Button */}
@@ -247,9 +247,9 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-deep-purple/95 backdrop-blur-lg animate-fade-in">
+        <div className="md:hidden bg-white dark:bg-deep-purple/95 backdrop-blur-lg animate-fade-in border-t border-foreground/10 shadow-lg">
           <div className="container mx-auto px-4 py-4">
-            <nav className="flex flex-col space-y-4 text-white">
+            <nav className="flex flex-col space-y-4 text-foreground">
 
               {/* Hackathon mobile submenu */}
               <p className="font-semibold text-saffron">Hackathon</p>
@@ -283,7 +283,7 @@ const Navbar = () => {
                 </Link>
               ))}
 
-              <Button className="bg-saffron hover:bg-saffron/80 text-white w-full mt-4">
+              <Button className="bg-saffron hover:bg-saffron/80 text-black w-full mt-4">
                 Join Now
               </Button>
             </nav>

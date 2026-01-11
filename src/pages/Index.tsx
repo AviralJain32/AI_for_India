@@ -13,22 +13,21 @@ import Footer from '@/components/Footer';
 const Index = () => {
   const { setTheme } = useTheme();
   
-  // Set dark theme by default
+  // Set light theme by default
   useEffect(() => {
-    setTheme('dark');
+    setTheme('light');
   }, [setTheme]);
 
   // Summit date for countdown
   const summitDate = new Date('2025-03-15T09:00:00');
 
   return (
-    <div className="min-h-screen bg-dark-navy">
+    <div className="min-h-screen bg-background">
       <Navbar />
-      <main>
+      <main className="overflow-hidden">
         <HeroSection />
         <StatsSection />
         <HackathonsSection />
-
         {/* <CountdownTimer targetDate={summitDate} /> */}
         {/* <SpeakersSection /> */}
         <WomenInAISection />

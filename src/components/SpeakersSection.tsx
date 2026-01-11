@@ -21,8 +21,8 @@ const Speaker = ({ name, title, organization, imageUrl, delay }: SpeakerProps) =
             className="w-full h-full object-cover"
           />
         </div>
-        <h3 className="text-white font-medium text-lg">{name}</h3>
-        <p className="text-white/70 text-sm">{title}</p>
+        <h3 className="text-black font-medium text-lg">{name}</h3>
+        <p className="text-black/70 text-sm">{title}</p>
         <p className="text-saffron text-xs mt-1">{organization}</p>
       </div>
     </div>
@@ -65,7 +65,7 @@ const SpeakersSection = () => {
     <section className="py-20 bg-deep-purple">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-          <span className="text-white">Featured </span>
+          <span className="text-black">Featured </span>
           <span className="text-saffron">Speakers</span>
         </h2>
         

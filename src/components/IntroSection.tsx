@@ -11,10 +11,10 @@ const IntroSection = ({para1,para2,srcOfImage,altText}) => {
               
               {/* Text Content */}
               <div className="glass-card p-8 rounded-xl max-w-2xl mx-auto lg:mx-0">
-                <p className="text-white/90 leading-relaxed text-lg">
+                <p className="text-black/90 leading-relaxed text-lg">
                 {para1}
                 </p>
-                <p className="text-white/90 leading-relaxed text-lg mt-4">
+                <p className="text-black/90 leading-relaxed text-lg mt-4">
                 {para2}
                 </p>
               </div>

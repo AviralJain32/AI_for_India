@@ -12,10 +12,10 @@ const CompetitionCard = ({ title, description, icon: Icon, color }) => {
     <Card className="glass-card border-0 hover-scale hover-glow">
       <CardContent className="p-6">
         <div className={`w-12 h-12 rounded-full ${color} flex items-center justify-center mb-4`}>
-          <Icon className="h-6 w-6 text-white" />
+          <Icon className="h-6 w-6 text-black" />
         </div>
-        <h3 className="text-xl font-semibold mb-4 text-white">{title}</h3>
-        <p className="text-white/80">{description}</p>
+        <h3 className="text-xl font-semibold mb-4 text-black">{title}</h3>
+        <p className="text-black/80">{description}</p>
       </CardContent>
     </Card>
   );
@@ -24,7 +24,7 @@ const CompetitionCard = ({ title, description, icon: Icon, color }) => {
 const FocusAreaCard = ({ title, color }) => {
   return (
     <div className={`glass-card rounded-xl p-4 ${color} bg-opacity-10 hover-scale`}>
-      <h3 className="text-lg font-medium text-white">{title}</h3>
+      <h3 className="text-lg font-medium text-black">{title}</h3>
     </div>
   );
 };
@@ -33,10 +33,10 @@ const BenefitCard = ({ icon: Icon, title, description, color }) => {
   return (
     <div className="glass-card p-6 rounded-xl text-center hover-scale">
       <div className={`w-16 h-16 rounded-full ${color} flex items-center justify-center mx-auto mb-4`}>
-        <Icon className="h-8 w-8 text-white" />
+        <Icon className="h-8 w-8 text-black" />
       </div>
-      <h3 className="text-white font-medium text-lg mb-2">{title}</h3>
-      <p className="text-white/70">{description}</p>
+      <h3 className="text-black font-medium text-lg mb-2">{title}</h3>
+      <p className="text-black/70">{description}</p>
     </div>
   );
 };
@@ -54,11 +54,11 @@ const AIBattles = () => {
           <div className="container mx-auto px-4 relative z-10">
             <div className="text-center max-w-3xl mx-auto">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-                <span className="text-white">AI </span>
+                <span className="text-black">AI </span>
                 <span className="text-neon-purple">Battles</span>
               </h1>
-              <p className="text-xl md:text-2xl text-white/80 mb-8">AI Competitions for India: Fueling Innovation, Talent & Impact</p>
-              <p className="text-lg text-white/70">Driving AI Excellence Through Competitive Innovation</p>
+              <p className="text-xl md:text-2xl text-black/80 mb-8">AI Competitions for India: Fueling Innovation, Talent & Impact</p>
+              <p className="text-lg text-black/70">Driving AI Excellence Through Competitive Innovation</p>
             </div>
           </div>
         </section>
@@ -81,7 +81,7 @@ const AIBattles = () => {
           
           <div className="container mx-auto px-4 relative z-10">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-              <span className="text-white">Flagship AI </span>
+              <span className="text-black">Flagship AI </span>
               <span className="text-saffron">Competitions</span>
             </h2>
             
@@ -128,7 +128,7 @@ const AIBattles = () => {
         <section className="py-20 bg-dark-navy">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-              <span className="text-white">Focus </span>
+              <span className="text-black">Focus </span>
               <span className="text-neon-blue">Areas</span>
             </h2>
             
@@ -149,7 +149,7 @@ const AIBattles = () => {
           
           <div className="container mx-auto px-4 relative z-10">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-              <span className="text-white">Why </span>
+              <span className="text-black">Why </span>
               <span className="text-saffron">Participate</span>
             </h2>
             
@@ -184,10 +184,10 @@ const AIBattles = () => {
             </div>
             
             <div className="text-center mt-16">
-              <Button className="bg-neon-purple hover:bg-neon-purple/80 text-white px-8 py-6 rounded-full text-lg hover-scale">
+              <Button className="bg-neon-purple hover:bg-neon-purple/80 text-black px-8 py-6 rounded-full text-lg hover-scale">
                 Join the Movement
               </Button>
-              <p className="text-white/70 mt-4">Be part of India's AI transformation by participating, mentoring, or sponsoring our next competition.</p>
+              <p className="text-black/70 mt-4">Be part of India's AI transformation by participating, mentoring, or sponsoring our next competition.</p>
             </div>
           </div>
         </section>

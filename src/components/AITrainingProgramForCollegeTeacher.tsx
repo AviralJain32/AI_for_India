@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { FaClock, FaGraduationCap, FaCompass } from "react-icons/fa";
 
 const ProgramMeta = ({ icon, label, value }) => (
-  <div className="flex items-center gap-2 text-white/90">
+  <div className="flex items-center gap-2 text-black/90">
     <span className="text-saffron text-xl">{icon}</span>
     <span className="font-medium">{label}:</span>
     <span>{value}</span>
@@ -13,14 +13,14 @@ const ProgramMeta = ({ icon, label, value }) => (
 const SectionHeader = ({ title, icon }) => (
   <div className="flex items-center gap-3 mb-6">
     <span className="text-3xl text-saffron">{icon}</span>
-    <h2 className="text-2xl md:text-4xl font-bold text-center tracking-tight text-white">{title}</h2>
+    <h2 className="text-2xl md:text-4xl font-bold text-center tracking-tight text-black">{title}</h2>
   </div>
 );
 
 const SubList = ({ title, items }) => (
   <div className="mb-3">
     <h4 className="font-semibold text-saffron">{title}</h4>
-    <ul className="list-disc pl-6 text-white/80 space-y-1">
+    <ul className="list-disc pl-6 text-black/80 space-y-1">
       {items.map((item, i) => (
         <li key={i}>{item}</li>
       ))}
@@ -157,7 +157,7 @@ const modules = [
 ];
 
 const ProgramOutcomes = () => (
-  <div className="bg-saffron/10 border-l-4 border-saffron p-6 rounded-xl text-white space-y-3 mt-10">
+  <div className="bg-saffron/10 border-l-4 border-saffron p-6 rounded-xl text-black space-y-3 mt-10">
     <h3 className="text-xl font-bold text-saffron">🎯 Program Outcomes</h3>
     <ul className="list-disc pl-6 space-y-2">
       <li>Teach AI concepts or integrate them into existing courses</li>
@@ -173,7 +173,7 @@ export default function AITrainingProgram() {
     <div className="max-w-4xl mx-auto px-6 py-12 bg-dark-navy rounded-2xl shadow-lg">
       <SectionHeader title="AI Training Program for College Faculty" icon={<FaGraduationCap />} />
 
-      <div className="space-y-3 text-white/90 mb-10">
+      <div className="space-y-3 text-black/90 mb-10">
         <ProgramMeta icon={<FaCompass />} label="Objective" value="Equip faculty with AI knowledge and tools for integration into academics" />
         <ProgramMeta icon={<FaClock />} label="Duration" value="40–60 Hours (Blended Mode)" />
         <ProgramMeta icon="👥" label="Target Group" value="Faculty in Engineering, Sciences, Management, Humanities" />
@@ -183,7 +183,7 @@ export default function AITrainingProgram() {
       <Accordion type="single" collapsible className="space-y-3">
         {modules.map((mod, i) => (
           <AccordionItem key={i} value={`module-${i}`} className="border border-white/10 rounded-xl bg-white/5 p-4">
-            <h4 className="text-lg font-semibold text-white mb-2">{mod.title}</h4>
+            <h4 className="text-lg font-semibold text-black mb-2">{mod.title}</h4>
             <Badge variant="outline" className="text-xs mb-2 bg-saffron/20 text-saffron">
               ⏱ Duration: {mod.duration}
             </Badge>

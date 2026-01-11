@@ -11,10 +11,10 @@ const PillarCard = ({ title, description, icon: Icon, color }) => {
     <Card className="glass-card border-0 hover-scale hover-glow">
       <CardContent className="p-6">
         <div className={`w-12 h-12 rounded-full ${color} flex items-center justify-center mb-4`}>
-          <Icon className="h-6 w-6 text-white" />
+          <Icon className="h-6 w-6 text-black" />
         </div>
-        <h3 className="text-xl font-semibold mb-4 text-white">{title}</h3>
-        <p className="text-white/80">{description}</p>
+        <h3 className="text-xl font-semibold mb-4 text-black">{title}</h3>
+        <p className="text-black/80">{description}</p>
       </CardContent>
     </Card>
   );
@@ -24,9 +24,9 @@ const CategoryCard = ({ title, icon: Icon, color }) => {
   return (
     <div className="glass-card p-5 rounded-xl flex items-center space-x-4 hover-scale">
       <div className={`w-10 h-10 rounded-full ${color} flex items-center justify-center flex-shrink-0`}>
-        <Icon className="h-5 w-5 text-white" />
+        <Icon className="h-5 w-5 text-black" />
       </div>
-      <h3 className="text-white font-medium">{title}</h3>
+      <h3 className="text-black font-medium">{title}</h3>
     </div>
   );
 };
@@ -34,8 +34,8 @@ const CategoryCard = ({ title, icon: Icon, color }) => {
 const FrameworkCard = ({ title, criteria }) => {
   return (
     <div className="glass-card p-5 rounded-xl hover-scale">
-      <h3 className="text-white font-medium mb-3">{title}</h3>
-      <p className="text-white/70 text-sm">{criteria}</p>
+      <h3 className="text-black font-medium mb-3">{title}</h3>
+      <p className="text-black/70 text-sm">{criteria}</p>
     </div>
   );
 };
@@ -54,9 +54,9 @@ const AITools = () => {
             <div className="text-center max-w-3xl mx-auto">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
                 <span className="text-neon-blue">AI </span>
-                <span className="text-white">Tools</span>
+                <span className="text-black">Tools</span>
               </h1>
-              <p className="text-xl md:text-2xl text-white/80 mb-8">Curating, Analyzing & Promoting Practical Applications</p>
+              <p className="text-xl md:text-2xl text-black/80 mb-8">Curating, Analyzing & Promoting Practical Applications</p>
             </div>
           </div>
         </section>
@@ -79,7 +79,7 @@ const AITools = () => {
         <section className="py-20 bg-dark-navy">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-              <span className="text-white">Key </span>
+              <span className="text-black">Key </span>
               <span className="text-saffron">Pillars</span>
             </h2>
             
@@ -88,10 +88,10 @@ const AITools = () => {
               <div>
                 <h3 className="text-2xl font-bold mb-8 text-center">
                   <span className="text-neon-blue">1. </span>
-                  <span className="text-white">Curation</span>
+                  <span className="text-black">Curation</span>
                 </h3>
                 
-                <p className="text-center text-white/80 max-w-2xl mx-auto mb-10">
+                <p className="text-center text-black/80 max-w-2xl mx-auto mb-10">
                   Build a comprehensive, categorized repository of AI tools across sectors such as:
                 </p>
                 
@@ -109,10 +109,10 @@ const AITools = () => {
               <div>
                 <h3 className="text-2xl font-bold mb-8 text-center">
                   <span className="text-neon-blue">2. </span>
-                  <span className="text-white">Analysis</span>
+                  <span className="text-black">Analysis</span>
                 </h3>
                 
-                <p className="text-center text-white/80 max-w-2xl mx-auto mb-10">
+                <p className="text-center text-black/80 max-w-2xl mx-auto mb-10">
                   Each tool is evaluated on a standard framework:
                 </p>
                 
@@ -144,7 +144,7 @@ const AITools = () => {
               <div>
                 <h3 className="text-2xl font-bold mb-8 text-center">
                   <span className="text-neon-blue">3. </span>
-                  <span className="text-white">Promotion & Use Cases</span>
+                  <span className="text-black">Promotion & Use Cases</span>
                 </h3>
                 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -180,12 +180,12 @@ const AITools = () => {
           
           <div className="container mx-auto px-4 relative z-10">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-              <span className="text-white">Outcomes </span>
+              <span className="text-black">Outcomes </span>
               <span className="text-saffron">Expected</span>
             </h2>
             
             <div className="glass-card p-8 rounded-xl max-w-4xl mx-auto">
-              <ul className="space-y-4 text-white/90">
+              <ul className="space-y-4 text-black/90">
                 <li className="flex items-start">
                   <span className="text-saffron font-bold mr-2">•</span>
                   <span>A growing knowledge hub of actionable AI tools and frameworks</span>

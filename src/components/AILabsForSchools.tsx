@@ -88,7 +88,7 @@
 //             <h3 className="text-xl font-semibold text-indigo-700">{section.title}</h3>
 //             <ul className="list-disc list-inside space-y-1">
 //               {section.items.map((item, idx) => (
-//                 <li key={idx} className="text-white">{item}</li>
+//                 <li key={idx} className="text-black">{item}</li>
 //               ))}
 //             </ul>
 //           </CardContent>
@@ -197,7 +197,7 @@ const SchoolRequirements = () => {
     <div className="max-w-6xl mx-auto p-6 space-y-6">
       <h2 className="text-3xl font-bold mb-6 text-center text-indigo-700">🏫 AI Lab Requirements for Schools</h2>
       {requirements.map((section, index) => (
-        <Card key={index} className="shadow-lg bg-slate-900 text-white">
+        <Card key={index} className="shadow-lg bg-slate-900 text-black">
           <CardContent className="p-6 space-y-4">
             <h3 className="text-2xl font-semibold text-indigo-400">{section.title}</h3>
             <ul className="space-y-2 list-disc list-inside">

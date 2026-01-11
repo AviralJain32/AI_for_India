@@ -12,10 +12,10 @@ const PillarCard = ({ title, description, icon: Icon, color }) => {
     <Card className="glass-card border-0 hover-scale hover-glow">
       <CardContent className="p-6">
         <div className={`w-12 h-12 rounded-full ${color} flex items-center justify-center mb-4`}>
-          <Icon className="h-6 w-6 text-white" />
+          <Icon className="h-6 w-6 text-black" />
         </div>
-        <h3 className="text-xl font-semibold mb-4 text-white">{title}</h3>
-        <p className="text-white/80">{description}</p>
+        <h3 className="text-xl font-semibold mb-4 text-black">{title}</h3>
+        <p className="text-black/80">{description}</p>
       </CardContent>
     </Card>
   );
@@ -24,7 +24,7 @@ const PillarCard = ({ title, description, icon: Icon, color }) => {
 const CommitmentCard = ({ title }) => {
   return (
     <div className="glass-card p-4 rounded-xl hover-scale">
-      <p className="text-white text-center">{title}</p>
+      <p className="text-black text-center">{title}</p>
     </div>
   );
 };
@@ -42,11 +42,11 @@ const AIForAll = () => {
           <div className="container mx-auto px-4 relative z-10">
             <div className="text-center max-w-3xl mx-auto">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-                <span className="text-white">AI for </span>
+                <span className="text-black">AI for </span>
                 <span className="text-neon-pink">ALL</span>
               </h1>
-              <p className="text-xl md:text-2xl text-white/80 mb-8">Championing Inclusivity in AI: Empowering Women & Underrepresented Communities</p>
-              <p className="text-lg text-white/70">Creating Equal Access to the Future of Technology</p>
+              <p className="text-xl md:text-2xl text-black/80 mb-8">Championing Inclusivity in AI: Empowering Women & Underrepresented Communities</p>
+              <p className="text-lg text-black/70">Creating Equal Access to the Future of Technology</p>
             </div>
           </div>
         </section>
@@ -70,7 +70,7 @@ const AIForAll = () => {
           
           <div className="container mx-auto px-4 relative z-10">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-              <span className="text-white">Key Pillars of the </span>
+              <span className="text-black">Key Pillars of the </span>
               <span className="text-saffron">Program</span>
             </h2>
             
@@ -110,7 +110,7 @@ const AIForAll = () => {
         <section className="py-20 bg-dark-navy">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-              <span className="text-white">Our </span>
+              <span className="text-black">Our </span>
               <span className="text-neon-pink">Commitment</span>
             </h2>
             
@@ -128,17 +128,17 @@ const AIForAll = () => {
           
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-2xl mx-auto glass-card p-8 rounded-xl mb-12">
-              <h3 className="text-2xl font-bold mb-4 text-center text-white">Our Vision</h3>
-              <p className="text-white/90 text-center">
+              <h3 className="text-2xl font-bold mb-4 text-center text-black">Our Vision</h3>
+              <p className="text-black/90 text-center">
                 To build a vibrant, inclusive AI ecosystem where every voice counts, every idea is heard, and every innovator—regardless of background—has the resources and recognition to succeed.
               </p>
             </div>
             
             <div className="text-center">
-              <Button className="bg-neon-pink hover:bg-neon-pink/80 text-white px-8 py-6 rounded-full text-lg hover-scale">
+              <Button className="bg-neon-pink hover:bg-neon-pink/80 text-black px-8 py-6 rounded-full text-lg hover-scale">
                 Get Involved
               </Button>
-              <p className="text-white/70 mt-4">
+              <p className="text-black/70 mt-4">
                 Collaborate with us to nurture a truly inclusive AI ecosystem. Be a mentor, sponsor a fellowship, or launch a diversity-focused initiative within your organization.
               </p>
             </div>

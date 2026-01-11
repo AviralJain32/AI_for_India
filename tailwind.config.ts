@@ -63,17 +63,17 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Indian flag-inspired colors
-				saffron: '#FF9933',
-				'india-green': '#138808',
-				'india-blue': '#000080',
-				// Modern UI colors
-				'dark-navy': '#191E38',
-				'deep-purple': '#1F224A',
-				'neon-blue': '#4361EE',
-				'neon-pink': '#F72585',
-				'neon-teal': '#4CC9F0',
-				'neon-purple': '#7209B7',
+				// Indian flag-inspired colors (softer versions)
+				saffron: '#FFB366', // Lighter, softer saffron
+				'india-green': '#4CAF50', // Lighter, modern green
+				'india-blue': '#5C6BC0', // Lighter, softer blue
+				// Modern UI colors - Elegant light shades
+				'dark-navy': '#F5F7FA', // Very light blue-gray (was dark)
+				'deep-purple': '#F8F9FB', // Very light purple-gray (was dark)
+				'neon-blue': '#6B9FFF', // Soft, elegant blue
+				'neon-pink': '#FF7BB8', // Soft, elegant pink
+				'neon-teal': '#7DD3FC', // Soft, elegant teal
+				'neon-purple': '#A78BFA', // Soft, elegant purple
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

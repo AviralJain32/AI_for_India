@@ -52,7 +52,7 @@ const CountdownTimer = ({ targetDate }: CountdownProps) => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div className="space-y-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-white">
+            <h2 className="text-3xl md:text-4xl font-bold text-black">
               Upcoming AI Summit <span className="text-saffron">2025</span>
             </h2>
             
@@ -67,7 +67,7 @@ const CountdownTimer = ({ targetDate }: CountdownProps) => {
                   <div className={`text-4xl font-bold ${index === 0 ? 'text-saffron' : index === 1 ? 'text-neon-blue' : index === 2 ? 'text-neon-teal' : 'text-neon-pink'}`}>
                     {String(unit.value).padStart(2, '0')}
                   </div>
-                  <div className="text-white/70 text-sm mt-1">
+                  <div className="text-black/70 text-sm mt-1">
                     {unit.label}
                   </div>
                 </div>
@@ -76,15 +76,15 @@ const CountdownTimer = ({ targetDate }: CountdownProps) => {
             
             {/* Event Details */}
             <div className="space-y-4">
-              <div className="flex items-center space-x-3 text-white/80">
+              <div className="flex items-center space-x-3 text-black/80">
                 <Calendar className="h-5 w-5 text-saffron" />
                 <span>March 15-17, 2025</span>
               </div>
-              <div className="flex items-center space-x-3 text-white/80">
+              <div className="flex items-center space-x-3 text-black/80">
                 <MapPin className="h-5 w-5 text-saffron" />
                 <span>Bangalore International Convention Centre</span>
               </div>
-              <div className="flex items-center space-x-3 text-white/80">
+              <div className="flex items-center space-x-3 text-black/80">
                 <Users className="h-5 w-5 text-saffron" />
                 <span>5000+ Attendees Expected</span>
               </div>

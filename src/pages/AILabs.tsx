@@ -14,10 +14,10 @@
 //     <Card className="glass-card border-0 hover-scale hover-glow">
 //       <CardContent className="p-6">
 //         <div className={`w-12 h-12 rounded-full ${color} flex items-center justify-center mb-4`}>
-//           <Icon className="h-6 w-6 text-white" />
+//           <Icon className="h-6 w-6 text-black" />
 //         </div>
-//         <h3 className="text-xl font-semibold mb-4 text-white">{title}</h3>
-//         <p className="text-white/80">{description}</p>
+//         <h3 className="text-xl font-semibold mb-4 text-black">{title}</h3>
+//         <p className="text-black/80">{description}</p>
 //       </CardContent>
 //     </Card>
 //   );
@@ -27,10 +27,10 @@
 //   return (
 //     <div className="glass-card p-6 rounded-xl text-center hover-scale">
 //       <div className={`w-16 h-16 rounded-full ${color} flex items-center justify-center mx-auto mb-4`}>
-//         <Icon className="h-8 w-8 text-white" />
+//         <Icon className="h-8 w-8 text-black" />
 //       </div>
-//       <h3 className="text-white text-2xl font-bold mb-2">{count}</h3>
-//       <p className="text-white/70">{label}</p>
+//       <h3 className="text-black text-2xl font-bold mb-2">{count}</h3>
+//       <p className="text-black/70">{label}</p>
 //     </div>
 //   );
 // };
@@ -48,11 +48,11 @@
 //           <div className="container mx-auto px-4 relative z-10">
 //             <div className="text-center max-w-3xl mx-auto">
 //               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-//                 <span className="text-white">Build </span>
+//                 <span className="text-black">Build </span>
 //                 <span className="text-neon-teal">AI Labs</span>
 //               </h1>
-//               <p className="text-xl md:text-2xl text-white/80 mb-8">AI Labs in Schools & Colleges</p>
-//               <p className="text-lg text-white/70">Igniting Curiosity. Enabling Innovation. Empowering India's Future.</p>
+//               <p className="text-xl md:text-2xl text-black/80 mb-8">AI Labs in Schools & Colleges</p>
+//               <p className="text-lg text-black/70">Igniting Curiosity. Enabling Innovation. Empowering India's Future.</p>
 //             </div>
 //           </div>
 //         </section>
@@ -77,7 +77,7 @@
           
 //           <div className="container mx-auto px-4 relative z-10">
 //             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-//               <span className="text-white">Key Features of </span>
+//               <span className="text-black">Key Features of </span>
 //               <span className="text-saffron">AI Labs</span>
 //             </h2>
             
@@ -119,7 +119,7 @@
 //         <section className="py-20 bg-dark-navy">
 //           <div className="container mx-auto px-4">
 //             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-//               <span className="text-white">Impact </span>
+//               <span className="text-black">Impact </span>
 //               <span className="text-neon-blue">Goals</span>
 //             </h2>
             
@@ -162,13 +162,13 @@
 //           <div className="container mx-auto px-4 relative z-10">
 //             <div className="text-center max-w-2xl mx-auto">
 //               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-//                 <span className="text-white">Let's Build the </span>
+//                 <span className="text-black">Let's Build the </span>
 //                 <span className="text-saffron">Future Together</span>
 //               </h2>
-//               <p className="text-lg text-white/80 mb-8">
+//               <p className="text-lg text-black/80 mb-8">
 //                 Partner with us to set up AI Labs in your school, college, or region—and unlock a new era of learning and innovation.
 //               </p>
-//               <Button className="bg-neon-teal hover:bg-neon-teal/80 text-white px-8 py-6 rounded-full text-lg hover-scale">
+//               <Button className="bg-neon-teal hover:bg-neon-teal/80 text-black px-8 py-6 rounded-full text-lg hover-scale">
 //                 Partner With Us
 //               </Button>
 //             </div>
@@ -197,10 +197,10 @@ const FeatureCard = ({ title, description, icon: Icon, color }) => {
     <Card className="glass-card border-0 hover-scale hover-glow">
       <CardContent className="p-6">
         <div className={`w-12 h-12 rounded-full ${color} flex items-center justify-center mb-4`}>
-          <Icon className="h-6 w-6 text-white" />
+          <Icon className="h-6 w-6 text-black" />
         </div>
-        <h3 className="text-xl font-semibold mb-4 text-white">{title}</h3>
-        <p className="text-white/80">{description}</p>
+        <h3 className="text-xl font-semibold mb-4 text-black">{title}</h3>
+        <p className="text-black/80">{description}</p>
       </CardContent>
     </Card>
   );
@@ -227,11 +227,11 @@ const AILabs = () => {
           <div className="absolute -left-40 top-20 w-96 h-96 bg-neon-purple/10 rounded-full blur-3xl"></div>
 
           <div className="container mx-auto px-4 relative z-10 text-center max-w-3xl mx-auto">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-black">
               Build <span className="text-neon-teal">AI Labs</span>
             </h1>
-            <p className="text-xl md:text-2xl text-white/80 mb-4">AI Labs in Schools & Colleges</p>
-            <p className="text-lg text-white/70">
+            <p className="text-xl md:text-2xl text-black/80 mb-4">AI Labs in Schools & Colleges</p>
+            <p className="text-lg text-black/70">
               Igniting Curiosity. Enabling Innovation. Empowering India’s Future.
             </p>
           </div>
@@ -262,7 +262,7 @@ const AILabs = () => {
         {/* KEY FEATURES */}
         <section className="py-20 bg-deep-purple relative overflow-hidden">
           <div className="container mx-auto px-4 relative z-10">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-black">
               Key Features of <span className="text-saffron">AI Labs</span>
             </h2>
 
@@ -301,18 +301,18 @@ const AILabs = () => {
         {/* LAB TYPES */}
         <section className="py-20 bg-dark-navy">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-center text-black mb-12">
               AI Lab <span className="text-neon-blue">Models</span>
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
               <Card className="glass-card p-8 hover-scale">
-                <h3 className="text-white text-2xl font-bold mb-4">AI Nano Lab</h3>
-                <p className="text-white/80 mb-4">
+                <h3 className="text-black text-2xl font-bold mb-4">AI Nano Lab</h3>
+                <p className="text-black/80 mb-4">
                   Ideal for schools starting their AI skilling journey. Includes:
                 </p>
-                <ul className="text-white/70 space-y-2">
+                <ul className="text-black/70 space-y-2">
                   <li>• AI Ultimate Kit</li>
                   <li>• Arduino & IoT Kits</li>
                   <li>• Basic Electronics Kit</li>
@@ -323,11 +323,11 @@ const AILabs = () => {
               </Card>
 
               <Card className="glass-card p-8 hover-scale">
-                <h3 className="text-white text-2xl font-bold mb-4">AI Macro Lab</h3>
-                <p className="text-white/80 mb-4">
+                <h3 className="text-black text-2xl font-bold mb-4">AI Macro Lab</h3>
+                <p className="text-black/80 mb-4">
                   A full-scale advanced AI education ecosystem with:
                 </p>
-                <ul className="text-white/70 space-y-2">
+                <ul className="text-black/70 space-y-2">
                   <li>• VR Headsets & 3D Printer</li>
                   <li>• Drone & Humanoid Robot</li>
                   <li>• AI Ultimate + IoT + Electronics Kits</li>
@@ -344,19 +344,19 @@ const AILabs = () => {
         {/* COMPOSITE SKILL LAB SECTION */}
         <section className="py-20 bg-deep-purple relative">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl text-center font-bold text-white mb-10">
+            <h2 className="text-3xl md:text-4xl text-center font-bold text-black mb-10">
               Composite Skill Lab (CSL)
             </h2>
 
-            <p className="text-center text-white/80 max-w-3xl mx-auto mb-10">
+            <p className="text-center text-black/80 max-w-3xl mx-auto mb-10">
               The CSL integrates Robotics, Electronics, Satellites, Coding, AI and Space Technology
               aligned with CBSE Skill Modules (901, 903, 910, 932, 933). Includes teacher training, assessment
               framework, impact cards, certifications and project-based learning.
             </p>
 
             <Card className="glass-card p-8 max-w-4xl mx-auto">
-              <h3 className="text-2xl text-white font-bold mb-4">What CSL Includes:</h3>
-              <ul className="text-white/70 space-y-2">
+              <h3 className="text-2xl text-black font-bold mb-4">What CSL Includes:</h3>
+              <ul className="text-black/70 space-y-2">
                 <li>• Robotics Kits & Satellite Models</li>
                 <li>• Electronics Tools & STEM Kits</li>
                 <li>• CBSE Module-Aligned Curriculum</li>
@@ -371,7 +371,7 @@ const AILabs = () => {
         {/* IMPLEMENTATION PROCESS */}
         <section className="py-20 bg-dark-navy">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl text-center text-white font-bold mb-10">
+            <h2 className="text-3xl md:text-4xl text-center text-black font-bold mb-10">
               End-to-End Implementation
             </h2>
 
@@ -389,29 +389,29 @@ const AILabs = () => {
         {/* IMPACT GOALS */}
         <section className="py-20 bg-dark-navy">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-black">
               Impact <span className="text-neon-blue">Goals</span>
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
               <div className="glass-card p-6 rounded-xl">
-                <h3 className="text-white text-3xl font-bold">1M+</h3>
-                <p className="text-white/70">Students Skilled</p>
+                <h3 className="text-black text-3xl font-bold">1M+</h3>
+                <p className="text-black/70">Students Skilled</p>
               </div>
 
               <div className="glass-card p-6 rounded-xl">
-                <h3 className="text-white text-3xl font-bold">500+</h3>
-                <p className="text-white/70">Labs Established</p>
+                <h3 className="text-black text-3xl font-bold">500+</h3>
+                <p className="text-black/70">Labs Established</p>
               </div>
 
               <div className="glass-card p-6 rounded-xl">
-                <h3 className="text-white text-3xl font-bold">10K+</h3>
-                <p className="text-white/70">Projects Built</p>
+                <h3 className="text-black text-3xl font-bold">10K+</h3>
+                <p className="text-black/70">Projects Built</p>
               </div>
 
               <div className="glass-card p-6 rounded-xl">
-                <h3 className="text-white text-3xl font-bold">100+</h3>
-                <p className="text-white/70">Startups Incubated</p>
+                <h3 className="text-black text-3xl font-bold">100+</h3>
+                <p className="text-black/70">Startups Incubated</p>
               </div>
             </div>
           </div>
@@ -420,7 +420,7 @@ const AILabs = () => {
         {/* DOWNLOAD BROCHURES */}
 <section className="py-20 bg-dark-navy">
   <div className="container mx-auto px-4 text-center">
-    <h2 className="text-3xl md:text-4xl text-white font-bold mb-10">
+    <h2 className="text-3xl md:text-4xl text-black font-bold mb-10">
       View <span className="text-neon-blue">Brochures</span>
     </h2>
 
@@ -429,28 +429,28 @@ const AILabs = () => {
       <a
         href="https://drive.google.com/file/d/1LxbkHmuG3fjFcaEZf3M3Eye0l0wYNqJp/view?usp=sharing"
         target="_blank"
-        className="glass-card p-6 rounded-xl hover-scale text-white"
+        className="glass-card p-6 rounded-xl hover-scale text-black"
       >
         <h3 className="text-xl font-semibold mb-2">Main Brochure</h3>
-        <p className="text-white/70">Overview of AI Labs, Programs & Offerings</p>
+        <p className="text-black/70">Overview of AI Labs, Programs & Offerings</p>
       </a>
 
       <a
         href="https://drive.google.com/file/d/1ELhVB7itigK3juuYgD4mPpkwCPVStK_a/view?usp=sharing"
         target="_blank"
-        className="glass-card p-6 rounded-xl hover-scale text-white"
+        className="glass-card p-6 rounded-xl hover-scale text-black"
       >
         <h3 className="text-xl font-semibold mb-2">Composite Skill Lab</h3>
-        <p className="text-white/70">CBSE Modules, Robotics, Electronics, Space Tech</p>
+        <p className="text-black/70">CBSE Modules, Robotics, Electronics, Space Tech</p>
       </a>
 
       <a
         href="https://drive.google.com/file/d/142iEQGF32jAgdetfgoZWcgXwXNapYXcY/view?usp=sharing"
         target="_blank"
-        className="glass-card p-6 rounded-xl hover-scale text-white"
+        className="glass-card p-6 rounded-xl hover-scale text-black"
       >
         <h3 className="text-xl font-semibold mb-2">AI Nano & Macro Labs</h3>
-        <p className="text-white/70">Lab Setup, Kits, Tools, and Costing</p>
+        <p className="text-black/70">Lab Setup, Kits, Tools, and Costing</p>
       </a>
 
     </div>
@@ -461,13 +461,13 @@ const AILabs = () => {
         {/* CALL TO ACTION */}
         <section className="py-20 bg-deep-purple relative overflow-hidden">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-black">
               Let's Build the <span className="text-saffron">Future Together</span>
             </h2>
-            <p className="text-lg text-white/80 mb-8">
+            <p className="text-lg text-black/80 mb-8">
               Partner with us to set up AI Labs or Composite Skill Labs in your school or college.
             </p>
-            <Button className="bg-neon-teal hover:bg-neon-teal/80 text-white px-8 py-6 rounded-full text-lg hover-scale">
+            <Button className="bg-neon-teal hover:bg-neon-teal/80 text-black px-8 py-6 rounded-full text-lg hover-scale">
               Partner With Us
             </Button>
           </div>

@@ -132,7 +132,7 @@ const modules = [
   }
 ];
 const AITrainingSchool = () => (
-  <div className="min-h-screen px-4 py-10 sm:px-8 md:px-12 bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-500">
+  <div className="min-h-screen px-4 py-10 sm:px-8 md:px-12 bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-black transition-colors duration-500">
     <div className="max-w-5xl mx-auto space-y-12">
       <div className="text-center space-y-2">
         <h1 className="text-3xl md:text-4xl font-extrabold text-indigo-800 dark:text-indigo-400">

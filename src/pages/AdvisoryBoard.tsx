@@ -33,10 +33,10 @@
 //       <div className="container mx-auto px-4 relative z-10">
 //         {/* Header */}
 //         <div className="text-center max-w-3xl mx-auto mb-16">
-//           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+//           <h1 className="text-4xl md:text-5xl font-bold text-black mb-4">
 //             Advisory Board
 //           </h1>
-//           <p className="text-white/80 text-lg">
+//           <p className="text-black/80 text-lg">
 //             Meet the leadership and advisors guiding AFI Edutech’s vision and
 //             strategic direction.
 //           </p>
@@ -51,11 +51,11 @@
 //             >
 //               <CardContent className="p-8 text-center">
 //                 {/* Avatar placeholder */}
-//                 <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br from-saffron to-neon-purple flex items-center justify-center text-white text-2xl font-bold">
+//                 <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br from-saffron to-neon-purple flex items-center justify-center text-black text-2xl font-bold">
 //                   {member.name.charAt(0)}
 //                 </div>
 
-//                 <h3 className="text-xl font-semibold text-white mb-1">
+//                 <h3 className="text-xl font-semibold text-black mb-1">
 //                   {member.name}
 //                 </h3>
 
@@ -63,7 +63,7 @@
 //                   {member.position}
 //                 </p>
 
-//                 <p className="text-white/70 text-sm">{member.role}</p>
+//                 <p className="text-black/70 text-sm">{member.role}</p>
 //               </CardContent>
 //             </Card>
 //           ))}
@@ -112,10 +112,10 @@ const AdvisoryBoard = () => {
         <div className="container mx-auto px-4 relative z-10">
           {/* Header */}
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-black mb-4">
               Advisory Board
             </h1>
-            <p className="text-white/80 text-lg">
+            <p className="text-black/80 text-lg">
               Meet the leadership and advisors guiding AFI Edutech’s vision and
               strategic direction.
             </p>
@@ -133,15 +133,15 @@ const AdvisoryBoard = () => {
                 {/* Left: Avatar + Name */}
                 <div className="flex items-center gap-4 w-full md:w-1/3">
                   <div className="w-14 h-14 rounded-full bg-gradient-to-br from-saffron to-neon-purple
-                    flex items-center justify-center text-white text-xl font-bold">
+                    flex items-center justify-center text-black text-xl font-bold">
                     {member.name.charAt(0)}
                   </div>
 
                   <div>
-                    <h3 className="text-lg font-semibold text-white">
+                    <h3 className="text-lg font-semibold text-black">
                       {member.name}
                     </h3>
-                    <p className="text-white/60 text-sm">
+                    <p className="text-black/60 text-sm">
                       {member.position}
                     </p>
                   </div>
@@ -153,7 +153,7 @@ const AdvisoryBoard = () => {
                 </div>
 
                 {/* Right: Role */}
-                <div className="text-white/70 text-sm text-center md:text-right w-full md:w-1/3">
+                <div className="text-black/70 text-sm text-center md:text-right w-full md:w-1/3">
                   {member.role}
                 </div>
               </div>

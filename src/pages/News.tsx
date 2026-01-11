@@ -30,16 +30,16 @@ const NewsCard = ({ title, excerpt, date, category = "News", color, source, link
             <span className={`text-xs ${color} bg-white bg-opacity-10 rounded-full px-3 py-1`}>
               {source}
             </span>
-            <span className="text-white/60 text-xs">{formatDateTime(date)}</span>
+            <span className="text-black/60 text-xs">{formatDateTime(date)}</span>
           </div>
 
           {/* Title */}
-          <h3 className="text-xl font-semibold mb-3 text-white line-clamp-2">
+          <h3 className="text-xl font-semibold mb-3 text-black line-clamp-2">
             {title}
           </h3>
 
           {/* Excerpt */}
-          <p className="text-white/80 mb-4 line-clamp-4">
+          <p className="text-black/80 mb-4 line-clamp-4">
             {excerpt}
           </p>
 
@@ -61,11 +61,11 @@ const OfferingCard = ({ title, description, icon: Icon, color }) => (
   <div className="glass-card p-6 rounded-xl hover-scale">
     <div className="flex items-center mb-4">
       <div className={`w-10 h-10 rounded-full ${color} flex items-center justify-center mr-4 flex-shrink-0`}>
-        <Icon className="h-5 w-5 text-white" />
+        <Icon className="h-5 w-5 text-black" />
       </div>
-      <h3 className="text-lg font-medium text-white">{title}</h3>
+      <h3 className="text-lg font-medium text-black">{title}</h3>
     </div>
-    <p className="text-white/70">{description}</p>
+    <p className="text-black/70">{description}</p>
   </div>
 );
 
@@ -102,10 +102,10 @@ const News = () => {
           <div className="absolute -left-40 top-20 w-96 h-96 bg-neon-purple/10 rounded-full blur-3xl"></div>
           <div className="container mx-auto px-4 relative z-10 text-center max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              <span className="text-white">AI </span><span className="text-saffron">Headlines</span>
+              <span className="text-black">AI </span><span className="text-saffron">Headlines</span>
             </h1>
-            <p className="text-xl md:text-2xl text-white/80 mb-8">Inform. Inspire. Ignite.</p>
-            <p className="text-lg text-white/70">AI News, Updates & Success Stories for India's Innovation Ecosystem</p>
+            <p className="text-xl md:text-2xl text-black/80 mb-8">Inform. Inspire. Ignite.</p>
+            <p className="text-lg text-black/70">AI News, Updates & Success Stories for India's Innovation Ecosystem</p>
           </div>
         </section>
 
@@ -121,7 +121,7 @@ const News = () => {
           <div className="absolute inset-0 bg-gradient-radial from-dark-navy/80 to-deep-purple pointer-events-none"></div>
           <div className="container mx-auto px-4 relative z-10">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-              <span className="text-white">What We </span><span className="text-neon-blue">Offer</span>
+              <span className="text-black">What We </span><span className="text-neon-blue">Offer</span>
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <OfferingCard title="🗞️ Timely News & Announcements" description="Covering key AI-related developments..." icon={Newspaper} color="bg-neon-blue" />
@@ -136,11 +136,11 @@ const News = () => {
         <section className="py-20 bg-dark-navy">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-              <span className="text-white">Latest </span><span className="text-saffron">News</span>
+              <span className="text-black">Latest </span><span className="text-saffron">News</span>
             </h2>
 
             {loading ? (
-              <p className="text-center text-white/70">Loading news...</p>
+              <p className="text-center text-black/70">Loading news...</p>
             ) : error ? (
               <p className="text-center text-red-500">Failed to load news. Please try again later.</p>
             ) : (
@@ -169,8 +169,8 @@ const News = () => {
           <div className="absolute -right-20 bottom-20 w-96 h-96 bg-neon-blue/20 rounded-full blur-3xl"></div>
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-2xl mx-auto glass-card p-8 rounded-xl mb-12">
-              <h3 className="text-2xl font-bold mb-4 text-center text-white">Why It Matters</h3>
-              <ul className="space-y-3 text-white/90">
+              <h3 className="text-2xl font-bold mb-4 text-center text-black">Why It Matters</h3>
+              <ul className="space-y-3 text-black/90">
                 <li className="flex items-start"><span className="text-saffron font-bold mr-2">•</span>Bridges the gap between effort and visibility</li>
                 <li className="flex items-start"><span className="text-saffron font-bold mr-2">•</span>Keeps the ecosystem informed, engaged, and future-ready</li>
                 <li className="flex items-start"><span className="text-saffron font-bold mr-2">•</span>Celebrates India-centric innovation and motivates broader participation</li>
@@ -179,11 +179,11 @@ const News = () => {
             </div>
 
             <div className="text-center">
-              <h3 className="text-2xl font-bold mb-6 text-white">Be Part of the Story</h3>
-              <p className="text-white/80 mb-6 max-w-2xl mx-auto">
+              <h3 className="text-2xl font-bold mb-6 text-black">Be Part of the Story</h3>
+              <p className="text-black/80 mb-6 max-w-2xl mx-auto">
                 Got news, updates, or a story worth telling? Reach out and help us shine a light on India's AI journey.
               </p>
-              <Button className="bg-neon-blue hover:bg-neon-blue/80 text-white px-8 py-6 rounded-full text-lg hover-scale">
+              <Button className="bg-neon-blue hover:bg-neon-blue/80 text-black px-8 py-6 rounded-full text-lg hover-scale">
                 Submit News
               </Button>
             </div>

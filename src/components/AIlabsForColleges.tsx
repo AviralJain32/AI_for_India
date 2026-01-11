@@ -3,7 +3,7 @@
 // const Section = ({ title, items, icon }) => (
 //   <div className="mb-8">
 //     <h3 className="text-2xl font-semibold text-saffron mb-4">{icon} {title}</h3>
-//     <ul className="list-disc list-inside text-white/80 space-y-2 pl-4">
+//     <ul className="list-disc list-inside text-black/80 space-y-2 pl-4">
 //       {items.map((item, index) => (
 //         <li key={index}>{item}</li>
 //       ))}
@@ -13,7 +13,7 @@
 
 // const CollegeRequirementsSection = () => {
 //   return (
-//     <section className="py-20 bg-dark-navy text-white px-6 md:px-16">
+//     <section className="py-20 bg-dark-navy text-black px-6 md:px-16">
 //       <div className="container mx-auto max-w-5xl">
 //         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
 //           College <span className="text-neon-teal">AI Lab Requirements</span>
@@ -100,7 +100,7 @@ import React from 'react';
 //     <h3 className="text-2xl font-semibold text-saffron mb-4">
 //       {icon} {title}
 //     </h3>
-//     <div className="text-white/80 space-y-2 pl-4">{children}</div>
+//     <div className="text-black/80 space-y-2 pl-4">{children}</div>
 //   </div>
 // );
 
@@ -112,7 +112,7 @@ const Section = ({ title, icon, children }) => (
         {title}
       </h3>
     </div>
-    <div className="text-white/80 text-base md:text-lg leading-relaxed space-y-3 border-l-4 border-saffron pl-6">
+    <div className="text-black/80 text-base md:text-lg leading-relaxed space-y-3 border-l-4 border-saffron pl-6">
       {children}
     </div>
   </div>
@@ -120,7 +120,7 @@ const Section = ({ title, icon, children }) => (
 
 const CollegeRequirementsSection = () => {
   return (
-    <section className="py-20 bg-dark-navy text-white px-6 md:px-16">
+    <section className="py-20 bg-dark-navy text-black px-6 md:px-16">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
           College <span className="text-neon-teal">AI Lab Requirements</span>
