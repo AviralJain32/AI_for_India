@@ -18,6 +18,10 @@ import News from "./pages/News";
 import Layout from "./Layout";
 import AIConference from "./pages/AIConference";
 import AdvisoryBoard from "./pages/AdvisoryBoard";
+import HackathonPage from "./pages/HackathonPage";
+import ConferencePage from "./pages/ConferencePage";
+import CollaboratorsPage from "./pages/CollaboratorsPage";
+import ExpertsPage from "./pages/ExpertsPage";
 
 const queryClient = new QueryClient();
 
@@ -41,6 +45,10 @@ const App = () => (
             <Route path="/news" element={<News />} />
             <Route path="/conference" element={<AIConference />} />
             <Route path="/board" element={<AdvisoryBoard />} />
+            <Route path="/hackathons/:slug" element={<HackathonPage />} />
+            <Route path="/conferences/:slug" element={<ConferencePage />} />
+            <Route path="/collaborators" element={<CollaboratorsPage />} />
+            <Route path="/experts" element={<ExpertsPage />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
             </Route>
