@@ -1,104 +1,7 @@
 
-// import React from 'react';
-// import { Button } from "@/components/ui/button";
-// import { Calendar, Users, Award } from 'lucide-react';
-
-// interface HackathonCardProps {
-//   title: string;
-//   date: string;
-//   prize: string;
-//   teamSize: string;
-//   mode: string;
-//   color: string;
-//   delay: string;
-// }
-
-// const HackathonCard = ({ title, date, prize, teamSize, mode, color, delay }: HackathonCardProps) => {
-//   return (
-//     <div 
-//       className="glass-card rounded-xl overflow-hidden hover-scale hover-glow"
-//       style={{ animationDelay: delay }}
-//     >
-//       <div className={`h-2 ${color}`}></div>
-//       <div className="p-6">
-//         <h3 className="text-black font-bold text-lg mb-4">{title}</h3>
-//         <p className="text-sm text-black/70 flex items-center mb-2">
-//           <Calendar className="h-4 w-4 mr-2" />
-//           {date}
-//         </p>
-//         <div className="grid grid-cols-2 gap-x-4 gap-y-2 mb-4">
-//           <div>
-//             <p className="text-xs text-black/70">Prize Pool</p>
-//             <p className="text-black font-medium">{prize}</p>
-//           </div>
-//           <div>
-//             <p className="text-xs text-black/70">Team Size</p>
-//             <p className="text-black font-medium">{teamSize}</p>
-//           </div>
-//           <div>
-//             <p className="text-xs text-black/70">Mode</p>
-//             <p className="text-black font-medium">{mode}</p>
-//           </div>
-//         </div>
-//         <Button className={`w-full ${color} hover:opacity-90`}>
-//           Register Now
-//         </Button>
-//       </div>
-//     </div>
-//   );
-// };
-
-// const HackathonsSection = () => {
-//   return (
-//     <section id="hackathons" className="py-20 bg-deep-purple relative overflow-hidden">
-//       {/* Gradient background */}
-//       <div className="absolute -left-40 bottom-0 w-96 h-96 bg-neon-blue/10 rounded-full blur-3xl"></div>
-      
-//       <div className="container mx-auto px-4 relative z-10">
-//         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-//           <span className="text-black">Upcoming </span>
-//           <span className="text-saffron">Hackathons</span>
-//         </h2>
-        
-//         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-//           <HackathonCard 
-//             title="AI Healthcare Challenge"
-//             date="May 10-12, 2025"
-//             prize="₹10,00,000"
-//             teamSize="2-4 Members"
-//             mode="Online"
-//             color="bg-neon-purple"
-//             delay="0s"
-//           />
-//           <HackathonCard 
-//             title="Smart Cities Hackathon"
-//             date="June 15-18, 2025"
-//             prize="₹15,00,000"
-//             teamSize="3-5 Members"
-//             mode="Hybrid"
-//             color="bg-neon-blue"
-//             delay="0.1s"
-//           />
-//           <HackathonCard 
-//             title="EdTech Innovation"
-//             date="July 5-7, 2025"
-//             prize="₹5,00,000"
-//             teamSize="2-3 Members"
-//             mode="Online"
-//             color="bg-saffron"
-//             delay="0.2s"
-//           />
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default HackathonsSection;
-
-import React from "react";
 import { Button } from "@/components/ui/button";
-import { Calendar, Users, Award, ArrowRight } from "lucide-react";
+import { hackathons } from "@/lib/data";
+import { Calendar, Users, Award, ArrowRight, BookOpen, Globe, BarChart3, HeartPulse, Wallet, Cpu } from "lucide-react";
 import { Link } from "react-router-dom";
 interface HackathonCardProps {
   title: string;
@@ -184,9 +87,9 @@ const HackathonsSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-            <span className="text-foreground">Recent </span>
+            <span className="text-foreground">Our </span>
             <span className="text-saffron text-transparent bg-clip-text bg-gradient-to-r from-saffron to-orange-500">
-              Hackathons
+              Flagship Events 
             </span>
           </h2>
           <p className="text-foreground/70 text-base sm:text-lg max-w-2xl mx-auto">
@@ -195,28 +98,69 @@ const HackathonsSection = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-5xl mx-auto">
-          <HackathonCard
-            title="OneEarth International Hackathon 2025"
-            date="October 24-25, 2025"
-            prize="£2500"
-            teamSize="2-4 Members"
-            mode="New Delhi, India"
-            color="bg-neon-blue"
-            delay="0s"
-            url="https://oneearth-international-hackathon.aiforindia.co.in/"
-          />
-          <HackathonCard
-            title="HackSecureX International Hackathon 2026"
-            date="January 16-17, 2026"
-            prize="$2000"
-            teamSize="2-4 Members"
-            mode="Online"
-            color="bg-neon-purple"
-            delay="0.1s"
-            url="https://www.hacksecurex.com/"
-          />
+            {hackathons.map((hackathon, index) => (
+              <HackathonCard
+                key={hackathon.slug}
+                title={hackathon.title}
+                date={hackathon.date}
+                prize={hackathon.prize}
+                teamSize="2-4 Members"
+                mode={hackathon.mode}
+                color={index % 2 === 0 ? "bg-neon-blue" : "bg-neon-purple"}
+                delay={`${index * 0.1}s`}
+                url={hackathon.link}
+              />
+            ))}
         </div>
+
+        <div className="max-w-4xl mx-auto text-center mt-16">
+  <div className="glass-card p-8 rounded-2xl border border-white/10 backdrop-blur-md">
+    
+    <h3 className="text-2xl font-semibold text-foreground mb-3">
+      More Upcoming Hackathons & Tech Summits
+    </h3>
+    
+    <p className="text-muted-foreground mb-8">
+      We’re constantly launching new challenges across cutting-edge domains
+    </p>
+
+    <div className="grid grid-cols-2 md:grid-cols-3 gap-5">
+      
+      {/* Item */}
+      <div className="flex items-center gap-3 p-4 rounded-lg hover:bg-white/5 transition">
+        <BookOpen className="h-5 w-5 text-saffron" />
+        <span className="text-sm text-foreground/90">Agentic AI</span>
       </div>
+
+      <div className="flex items-center gap-3 p-4 rounded-lg hover:bg-white/5 transition">
+        <BarChart3 className="h-5 w-5 text-neon-blue" />
+        <span className="text-sm text-foreground/90">Data Science</span>
+      </div>
+
+      <div className="flex items-center gap-3 p-4 rounded-lg hover:bg-white/5 transition">
+        <Globe className="h-5 w-5 text-neon-purple" />
+        <span className="text-sm text-foreground/90">Smart Cities</span>
+      </div>
+
+      <div className="flex items-center gap-3 p-4 rounded-lg hover:bg-white/5 transition">
+        <HeartPulse className="h-5 w-5 text-red-400" />
+        <span className="text-sm text-foreground/90">HealthTech</span>
+      </div>
+
+      <div className="flex items-center gap-3 p-4 rounded-lg hover:bg-white/5 transition">
+        <Wallet className="h-5 w-5 text-green-400" />
+        <span className="text-sm text-foreground/90">FinTech</span>
+      </div>
+
+      <div className="flex items-center gap-3 p-4 rounded-lg hover:bg-white/5 transition">
+        <Cpu className="h-5 w-5 text-yellow-400" />
+        <span className="text-sm text-foreground/90">Web3 & Blockchain</span>
+      </div>
+
+    </div>
+  </div>
+</div>
+</div>
     </section>
   );
 };

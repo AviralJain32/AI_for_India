@@ -32,26 +32,26 @@ const StatsSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 max-w-6xl mx-auto">
           <StatCard 
-            count="50+" 
-            label="AI Summits" 
+            count="10K+" 
+            label="Global Participants" 
             color="text-saffron"
             delay="0s"
           />
           <StatCard 
-            count="10K+" 
-            label="Trained Teachers" 
+            count="100+" 
+            label="Hackathons Executed" 
             color="text-neon-teal"
             delay="0.1s"
           />
           <StatCard 
-            count="5K+" 
-            label="Women in Tech" 
+            count="50+" 
+            label="Research Publications" 
             color="text-neon-blue"
             delay="0.2s"
           />
           <StatCard 
-            count="100+" 
-            label="Hackathons" 
+            count="30+" 
+            label="Global Partnerships" 
             color="text-neon-purple"
             delay="0.3s"
           />

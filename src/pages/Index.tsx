@@ -3,11 +3,13 @@ import React, { useEffect } from 'react';
 import { useTheme } from 'next-themes';
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
+import AboutSection from '@/components/AboutSection';
 import StatsSection from '@/components/StatsSection';
-import CountdownTimer from '@/components/CountdownTimer';
-import SpeakersSection from '@/components/SpeakersSection';
-import WomenInAISection from '@/components/WomenInAISection';
 import HackathonsSection from '@/components/HackathonsSection';
+import ConferenceSection from '@/components/ConferenceSection';
+import ServicesSection from '@/components/ServicesSection';
+import WomenInAISection from '@/components/WomenInAISection';
+import CTASection from '@/components/CTASection';
 import Footer from '@/components/Footer';
 
 const Index = () => {
@@ -18,19 +20,18 @@ const Index = () => {
     setTheme('light');
   }, [setTheme]);
 
-  // Summit date for countdown
-  const summitDate = new Date('2025-03-15T09:00:00');
-
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
       <main className="overflow-hidden">
         <HeroSection />
+        <AboutSection />
         <StatsSection />
         <HackathonsSection />
-        {/* <CountdownTimer targetDate={summitDate} /> */}
-        {/* <SpeakersSection /> */}
+        <ConferenceSection />
+        <ServicesSection />
         <WomenInAISection />
+        <CTASection />
       </main>
       <Footer />
     </div>

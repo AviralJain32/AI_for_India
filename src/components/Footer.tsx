@@ -27,7 +27,7 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-foreground/70 mb-6">
-              Empowering India's future with artificial intelligence and innovation.
+              We are a next-generation EdTech company driving global innovation through hackathons, AI challenges, and international research conferences.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-foreground/70 hover:text-saffron transition-colors">
@@ -52,21 +52,19 @@ const Footer = () => {
             <h3 className="text-foreground font-medium text-lg mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li><a href="#" className="text-foreground/70 hover:text-saffron transition-colors">About Us</a></li>
-              <li><a href="#" className="text-foreground/70 hover:text-saffron transition-colors">Events</a></li>
+              <li><a href="#" className="text-foreground/70 hover:text-saffron transition-colors">Hackathons</a></li>
+              <li><a href="#" className="text-foreground/70 hover:text-saffron transition-colors">Conferences</a></li>
               <li><a href="#" className="text-foreground/70 hover:text-saffron transition-colors">Programs</a></li>
-              <li><a href="#" className="text-foreground/70 hover:text-saffron transition-colors">Resources</a></li>
               <li><a href="#" className="text-foreground/70 hover:text-saffron transition-colors">Contact</a></li>
             </ul>
           </div>
           
           <div>
-            <h3 className="text-foreground font-medium text-lg mb-4">Connect</h3>
-            <ul className="space-y-2">
-              <li><a href="#" className="text-foreground/70 hover:text-saffron transition-colors">Twitter</a></li>
-              <li><a href="#" className="text-foreground/70 hover:text-saffron transition-colors">Facebook</a></li>
-              <li><a href="#" className="text-foreground/70 hover:text-saffron transition-colors">Instagram</a></li>
-              <li><a href="#" className="text-foreground/70 hover:text-saffron transition-colors">LinkedIn</a></li>
-              <li><a href="#" className="text-foreground/70 hover:text-saffron transition-colors">YouTube</a></li>
+            <h3 className="text-foreground font-medium text-lg mb-4">Contact Us</h3>
+            <ul className="space-y-3">
+              <li className="text-foreground/70">📧 info@afiedutech.com</li>
+              <li className="text-foreground/70">🌐 www.afiedutech.com</li>
+              <li className="text-foreground/70">📍 Global Operations</li>
             </ul>
           </div>
           

@@ -13,16 +13,17 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
         <div className="max-w-4xl mx-auto text-center">
           <div className="space-y-8">
-            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-tight">
-              <span className="text-foreground">AFI </span>
-              <span className="text-saffron mt-2">Edutech</span>
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold leading-tight">
+              <span className="text-foreground">Empowering Innovation. </span>
+              <span className="text-saffron mt-2">Connecting Minds.</span>
+              <span className="text-foreground mt-2">Building the Future.</span>
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-foreground/80 max-w-3xl mx-auto leading-relaxed px-4">
-            Advancing the AI Revolution: A Collaborative Hub for Researchers, Innovators, Developers and Visionaries.
+            We are a next-generation EdTech company driving global innovation through hackathons, AI challenges, and international research conferences. From students to researchers and industry professionals, we create platforms that turn ideas into impactful solutions.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
               <Button className="bg-saffron hover:bg-saffron/90 text-black px-8 py-6 rounded-full text-lg font-semibold hover-scale shadow-lg shadow-saffron/20 w-full sm:w-auto">
-                Register Now
+                Explore
               </Button>
               <Button variant="outline" className="text-foreground border-2 border-foreground/30 hover:bg-saffron hover:text-black hover:border-saffron px-8 py-6 rounded-full text-lg font-semibold hover-scale w-full sm:w-auto">
                 Learn More
