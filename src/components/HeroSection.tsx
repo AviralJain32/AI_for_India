@@ -2,6 +2,7 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import StaticImage from './StaticImage';
+import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
   return (
@@ -22,12 +23,16 @@ const HeroSection = () => {
             We are a next-generation EdTech company driving global innovation through hackathons, AI challenges, and international research conferences. From students to researchers and industry professionals, we create platforms that turn ideas into impactful solutions.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-              <Button className="bg-saffron hover:bg-saffron/90 text-black px-8 py-6 rounded-full text-lg font-semibold hover-scale shadow-lg shadow-saffron/20 w-full sm:w-auto">
-                Explore
-              </Button>
-              <Button variant="outline" className="text-foreground border-2 border-foreground/30 hover:bg-saffron hover:text-black hover:border-saffron px-8 py-6 rounded-full text-lg font-semibold hover-scale w-full sm:w-auto">
-                Learn More
-              </Button>
+              <Link to="/#flagship-events">
+                <Button className="bg-saffron hover:bg-saffron/90 text-black px-8 py-6 rounded-full text-lg font-semibold hover-scale shadow-lg shadow-saffron/20 w-full sm:w-auto">
+                  Explore
+                </Button>
+              </Link>
+              <Link to="/about">
+                <Button variant="outline" className="text-foreground border-2 border-foreground/30 hover:bg-saffron hover:text-black hover:border-saffron px-8 py-6 rounded-full text-lg font-semibold hover-scale w-full sm:w-auto">
+                  Learn More
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

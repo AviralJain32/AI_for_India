@@ -30,16 +30,16 @@ const StatsSection = () => {
       <div className="absolute inset-0 bg-gradient-radial from-dark-navy/40 dark:from-dark-navy/80 to-deep-purple pointer-events-none"></div>
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 max-w-6xl mx-auto">
+        <div className="grid grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-6 max-w-6xl mx-auto">
           <StatCard 
-            count="10K+" 
+            count="5K+" 
             label="Global Participants" 
             color="text-saffron"
             delay="0s"
           />
           <StatCard 
-            count="100+" 
-            label="Hackathons Executed" 
+            count="10+" 
+            label="Global Collaborators" 
             color="text-neon-teal"
             delay="0.1s"
           />
@@ -50,8 +50,14 @@ const StatsSection = () => {
             delay="0.2s"
           />
           <StatCard 
-            count="30+" 
-            label="Global Partnerships" 
+            count="250+" 
+            label="Global Research and Industry Experts" 
+            color="text-neon-purple"
+            delay="0.3s"
+          />
+          <StatCard 
+            count="6+" 
+            label="Global Events" 
             color="text-neon-purple"
             delay="0.3s"
           />

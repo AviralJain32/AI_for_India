@@ -5,8 +5,7 @@ import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
 import StatsSection from '@/components/StatsSection';
-import HackathonsSection from '@/components/HackathonsSection';
-import ConferenceSection from '@/components/ConferenceSection';
+import FlagshipEventsSection from '@/components/FlagshipEventsSection';
 import ServicesSection from '@/components/ServicesSection';
 import WomenInAISection from '@/components/WomenInAISection';
 import CTASection from '@/components/CTASection';
@@ -27,10 +26,9 @@ const Index = () => {
         <HeroSection />
         <AboutSection />
         <StatsSection />
-        <HackathonsSection />
-        <ConferenceSection />
-        <ServicesSection />
-        <WomenInAISection />
+        <FlagshipEventsSection />
+        {/* <ServicesSection /> */}
+        {/* <WomenInAISection /> */}
         <CTASection />
       </main>
       <Footer />

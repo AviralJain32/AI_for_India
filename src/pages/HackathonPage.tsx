@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import { hackathons } from '@/lib/data';
+import { aiChallengeEvents, hackathons } from '@/lib/data';
 
 /* ─── Scroll reveal helper ──────────────────────────────────── */
 const useInView = (threshold = 0.15) => {
@@ -182,7 +182,7 @@ const ImageCarousel: React.FC<{ images: string[] }> = ({ images }) => {
 /* ─── Main Page ─────────────────────────────────────────────── */
 const HackathonPage = () => {
   const { slug } = useParams<{ slug: string }>();
-  const hackathon = hackathons.find(h => h.slug === slug);
+  const hackathon = [...hackathons, ...aiChallengeEvents].find(h => h.slug === slug);
 
   if (!hackathon) {
     return (

@@ -66,6 +66,26 @@ export const hackathons = [
   link: "https://www.hacksecurex.com/"
   },
   {
+    slug: "intellitech-hackathon-2026",
+    title: "IntelliTech Hackathon: Engineering Smart Solutions",
+    tagline: "Innovate. Build. Transform with Intelligent Systems.",
+    date: "06-07 June 2026",
+    mode: "Online",
+    duration: "2 Days",
+    prize: "$1750",
+    organizer: "Universidad Nacional del Altiplano de Puno",
+    description:
+      "A global innovation challenge encouraging participants to build AI-driven and intelligent system solutions for real-world industry and societal problems.",
+    collaborators: [
+      "Universidad Nacional del Altiplano de Puno (INCUNALAB)",
+    ],
+    images: ["/ai-labs/images/AI_assemblies.avif"],
+    link: "https://www.intellitechhack.com/"
+  },
+];
+
+export const aiChallengeEvents = [
+  {
     slug: "oneearth-ai-tool-development-2026",
     title: "AI Tool Development Challenge 2026 on OneEarth",
     tagline: "One planet. One purpose. Powered by AI.",
@@ -90,25 +110,8 @@ export const hackathons = [
     "/Hackathon_snapshots/aitoolchallenge/9.png"
   ],
   link: "https://www.aitoolchallenge.com/"
-  },
-  {
-    slug: "intellitech-hackathon-2026",
-    title: "IntelliTech Hackathon: Engineering Smart Solutions",
-    tagline: "Innovate. Build. Transform with Intelligent Systems.",
-    date: "06-07 June 2026",
-    mode: "Online",
-    duration: "2 Days",
-    prize: "$1750",
-    organizer: "Universidad Nacional del Altiplano de Puno",
-    description:
-      "A global innovation challenge encouraging participants to build AI-driven and intelligent system solutions for real-world industry and societal problems.",
-    collaborators: [
-      "Universidad Nacional del Altiplano de Puno (INCUNALAB)",
-    ],
-    images: ["/ai-labs/images/AI_assemblies.avif"],
-    link: "https://www.intellitechhack.com/"
-  },
-];
+  }
+]
 
 export const conferences = [
   {
