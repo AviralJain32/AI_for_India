@@ -22,6 +22,7 @@ import HackathonPage from "./pages/HackathonPage";
 import ConferencePage from "./pages/ConferencePage";
 import CollaboratorsPage from "./pages/CollaboratorsPage";
 import ExpertsPage from "./pages/ExpertsPage";
+import CMSpage from "./pages/CMSpage";
 
 const queryClient = new QueryClient();
 
@@ -49,6 +50,8 @@ const App = () => (
             <Route path="/conferences/:slug" element={<ConferencePage />} />
             <Route path="/collaborators" element={<CollaboratorsPage />} />
             <Route path="/experts" element={<ExpertsPage />} />
+            <Route path="/cms" element={<CMSpage />} />
+
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
             </Route>
