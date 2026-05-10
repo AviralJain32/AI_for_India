@@ -3,7 +3,7 @@ import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Card, CardContent } from "@/components/ui/card";
-import { CheckCircle, Globe, Users, Sparkles, Target, Award } from 'lucide-react';
+import { CheckCircle, Sparkles, Target } from 'lucide-react';
 
 const About = () => {
   return (
@@ -26,75 +26,113 @@ const About = () => {
           </div>
         </section>
         
-        {/* Vision & Mission */}
+        {/* About Us */}
         <section className="py-20 bg-dark-navy relative">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-              {/* Vision */}
               <div className="glass-card p-8 rounded-xl hover-scale">
                 <h2 className="text-saffron text-3xl font-bold mb-6 flex items-center">
-                  <Sparkles className="mr-3" /> Vision Statement
+                  <Sparkles className="mr-3" /> About Us
                 </h2>
                 <p className="text-black/90 leading-relaxed">
-                  "To position India as a global leader in responsible and inclusive Artificial Intelligence innovation by empowering communities through education, entrepreneurship, engagement and equitable access to cutting-edge AI tools and opportunities."
+                  We are a dynamic innovation and research-driven organization dedicated to transforming ideas into impactful solutions through technology, research and collaborative learning platforms.
+                </p>
+                <p className="text-black/90 leading-relaxed mt-4">
+                  Our mission is to empower students, educators, researchers, professionals, startups and institutions by creating opportunities that foster innovation, creativity and future-ready skills.
                 </p>
               </div>
-              
-              {/* Mission */}
+
               <div className="glass-card p-8 rounded-xl hover-scale">
                 <h2 className="text-neon-blue text-3xl font-bold mb-6 flex items-center">
-                  <Target className="mr-3" /> Mission Statement
+                  <Target className="mr-3" /> What We Do
                 </h2>
+                <p className="text-black/90 leading-relaxed">
+                  We specialize in organizing hackathons, emerging technology tool challenges, AI summits, Olympiads, international conferences, workshops, innovation expos and research forums that bring together brilliant minds from academia and industry across the globe.
+                </p>
+                <p className="text-black/90 leading-relaxed mt-4">
+                  Our initiatives are designed to encourage experiential learning, interdisciplinary collaboration and real-world problem solving in rapidly evolving domains such as Artificial Intelligence, Data Science, Cybersecurity, IoT, Robotics, Blockchain, Cloud Computing and Sustainable Technologies.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Vision & Mission */}
+        <section className="py-20 bg-deep-purple relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-radial from-dark-navy/80 to-deep-purple pointer-events-none"></div>
+          <div className="container mx-auto px-4 relative z-10">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+              <div className="glass-card p-8 rounded-xl hover-scale">
+                <h2 className="text-saffron text-3xl font-bold mb-6">Vision</h2>
+                <p className="text-black/90 leading-relaxed">
+                  To be a globally recognized innovation, research and Artificial Intelligence–driven organization committed to building a thriving AI ecosystem that empowers future leaders, researchers, innovators and institutions through excellence, collaboration, creativity and transformative growth for a sustainable and progressive future.
+                </p>
+              </div>
+
+              <div className="glass-card p-8 rounded-xl hover-scale">
+                <h2 className="text-neon-blue text-3xl font-bold mb-6">Mission</h2>
                 <ul className="text-black/90 space-y-4">
                   <li className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-neon-blue mr-3 mt-1 flex-shrink-0" />
-                    <span>Catalyze AI innovation in India by hosting world-class conferences, summits, and competitions that bring together academia, industry, startups, and government stakeholders.</span>
+                    <span>Organize high-impact hackathons, emerging technology challenges, AI summits, Olympiads and international conferences that inspire innovation, creativity and real-world problem solving.</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-neon-blue mr-3 mt-1 flex-shrink-0" />
-                    <span>Nurture the AI startup ecosystem through incubation, mentorship, funding access, and strategic networking opportunities.</span>
+                    <span>Provide research-based solutions and technology consulting that address academic, industrial and societal challenges through cutting-edge innovation and interdisciplinary collaboration.</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-neon-blue mr-3 mt-1 flex-shrink-0" />
-                    <span>Deliver industry-relevant AI training programs, platforms, and simulators to equip individuals and institutions with hands-on skills for real-world applications.</span>
+                    <span>Recognize and celebrate excellence in research, innovation, entrepreneurship and technology through prestigious awards at national and international levels.</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-neon-blue mr-3 mt-1 flex-shrink-0" />
-                    <span>Build a national AI resource hub featuring curated tools, use cases and deployment-ready solutions.</span>
+                    <span>Foster a culture of scientific inquiry, critical thinking and experiential learning among students, researchers, educators, startups and professionals.</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-neon-blue mr-3 mt-1 flex-shrink-0" />
-                    <span>Champion inclusivity by empowering women and underrepresented groups through dedicated fellowships, mentorship events, community support and leadership opportunities.</span>
+                    <span>Create global platforms for collaboration among academia, industry, government and research communities for knowledge exchange and technological advancement.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-neon-blue mr-3 mt-1 flex-shrink-0" />
+                    <span>Promote emerging technologies such as Artificial Intelligence, Data Science, Cybersecurity, IoT, Robotics, Blockchain and Sustainable Technologies through experiential events and capacity-building initiatives.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-neon-blue mr-3 mt-1 flex-shrink-0" />
+                    <span>Bridge the gap between education, research and industry by enabling mentorship, networking, skill development, innovation incubation and research dissemination opportunities.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-neon-blue mr-3 mt-1 flex-shrink-0" />
+                    <span>Nurture globally competent and socially responsible innovators capable of contributing to the advancement of technology, research and society.</span>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
         </section>
-        
+
         {/* About Us */}
-        <section className="py-20 bg-deep-purple relative overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-radial from-dark-navy/80 to-deep-purple pointer-events-none"></div>
-          
-          <div className="container mx-auto px-4 relative z-10">
+        <section className="py-20 bg-dark-navy relative">
+          <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
                 <span className="text-black">About </span>
                 <span className="text-saffron">Us</span>
               </h2>
-              
               <div className="glass-card p-8 rounded-xl">
                 <p className="text-black/90 leading-relaxed text-lg mb-6">
-                  AFI Edutech is on a mission to make Artificial Intelligence accessible, innovative, and inclusive across India. We are building a nationwide platform that unites startups, students, researchers, and professionals to collaborate, learn, and create impact through AI.
+                  In addition to events and competitions, we provide research-based solutions and innovation-driven consulting services to academic institutions, industries and organizations seeking technological advancement and strategic transformation.
+                </p>
+                <p className="text-black/90 leading-relaxed text-lg mb-6">
+                  Through our research and innovation awards, we recognize outstanding contributions that drive scientific progress, entrepreneurship and societal impact.
                 </p>
                 <p className="text-black/90 leading-relaxed text-lg">
-                  Through conferences, training programs, competitions, startup showcases, curated toolkits, AI simulators, and inclusive outreach efforts, we're not just building a tech platform—we're nurturing a movement.
+                  By building a vibrant ecosystem of learning, networking, mentorship and innovation, we aim to bridge the gap between education, research and industry while nurturing globally competent innovators and leaders for the future.
                 </p>
               </div>
             </div>
           </div>
         </section>
-        
+
         {/* Our Offerings */}
         <section className="py-20 bg-dark-navy relative">
           <div className="container mx-auto px-4">
@@ -167,7 +205,13 @@ const About = () => {
             
             <div className="glass-card p-8 rounded-xl max-w-4xl mx-auto">
               <p className="text-black/90 leading-relaxed text-lg">
-                To establish a nationally recognized platform that advances Artificial Intelligence innovation in India by integrating education, enterprise, and ecosystem development—delivering strategic initiatives in training, startup incubation, inclusive participation, and knowledge dissemination to position India as a global hub for responsible AI leadership.
+                Our objective is to build a thriving Artificial Intelligence, innovation and research ecosystem by creating impactful platforms that connect students, researchers, educators, industry experts, startups and institutions worldwide.
+              </p>
+              <p className="text-black/90 leading-relaxed text-lg mt-4">
+                Through hackathons, AI summits, Olympiads, international conferences, innovation challenges, research-based solutions and recognition programs, we aim to foster creativity, collaboration, technological advancement and experiential learning.
+              </p>
+              <p className="text-black/90 leading-relaxed text-lg mt-4">
+                We strive to bridge the gap between education, research and industry while empowering future-ready innovators and leaders to develop sustainable, ethical and technology-driven solutions for global challenges.
               </p>
             </div>
           </div>
