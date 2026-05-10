@@ -174,7 +174,15 @@ export const collaborators = [
   {
     name: "UTEP",
     logo: "/hackathon-collaborators/utep.jpeg"
-  }
+  },
+  {
+    name: "University of Leicester",
+    logo: "/hackathon-collaborators/leicester.png"
+  },
+  {
+    name: "Suleyman Demirel University",
+    logo: "/hackathon-collaborators/demirel.jpeg"
+  },
 ];
 
 export const experts = [

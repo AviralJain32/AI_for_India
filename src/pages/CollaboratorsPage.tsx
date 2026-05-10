@@ -127,12 +127,12 @@ const CollaboratorsPage = () => {
                 }} />
 
                 {/* Name */}
-                <h3 style={{
+                {/* <h3 style={{
                   fontSize: '13px', fontWeight: 700, color: hovered === index ? '#0f172a' : '#374151',
                   lineHeight: 1.4, margin: 0, transition: 'color 0.2s',
                 }}>
                   {collaborator.name}
-                </h3>
+                </h3> */}
               </div>
             ))}
           </div>
