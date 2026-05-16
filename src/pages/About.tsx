@@ -115,8 +115,8 @@ const About = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-                <span className="text-black">About </span>
-                <span className="text-saffron">Us</span>
+                <span className="text-black">Innovation Beyond </span>
+                <span className="text-saffron">Events</span>
               </h2>
               <div className="glass-card p-8 rounded-xl">
                 <p className="text-black/90 leading-relaxed text-lg mb-6">
@@ -134,7 +134,7 @@ const About = () => {
         </section>
 
         {/* Our Offerings */}
-        <section className="py-20 bg-dark-navy relative">
+        {/* <section className="py-20 bg-dark-navy relative">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
               <span className="text-black">Our </span>
@@ -192,7 +192,7 @@ const About = () => {
               </Card>
             </div>
           </div>
-        </section>
+        </section> */}
         
         {/* Objectives */}
         <section className="py-20 bg-deep-purple relative overflow-hidden">
