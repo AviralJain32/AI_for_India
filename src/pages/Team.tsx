@@ -450,7 +450,7 @@ const teamMembers = [
   },
   {
     name: 'Tanvi',
-    role: 'Creative Communication Strategist',
+    role: 'Creative Communication Strategist (Intern)',
     photo: "/team/tanvi.jpeg",
     color: '#6366F1',
     bio: 'Shaping how we speak, connect, and resonate with audiences across India.',
