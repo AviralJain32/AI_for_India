@@ -62,7 +62,7 @@ const Footer = () => {
           <div>
             <h3 className="text-foreground font-medium text-lg mb-4">Contact Us</h3>
             <ul className="space-y-3">
-              <li className="text-foreground/70">📧 info@afiedutech.com</li>
+              <li className="text-foreground/70">📧 afiedutech@gmail.com</li>
               <li className="text-foreground/70">🌐 www.afiedutech.com</li>
               <li className="text-foreground/70">📍 Global Operations</li>
             </ul>
