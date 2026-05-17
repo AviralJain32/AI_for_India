@@ -409,7 +409,7 @@ const teamMembers = [
   {
     name: 'Aayushi Samantsinghar',
     role: 'Event Strategist',
-    photo: "/team/aayushi.jpeg",
+    photo: "/team/aayushi.png",
     color: '#FF6B35',
     bio: 'Crafting unforgettable event experiences that align with vision and impact.',
   },
