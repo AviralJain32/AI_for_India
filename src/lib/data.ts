@@ -125,7 +125,7 @@ export const aiChallengeEvents = [
     collaborators: [
       "Goldsmiths, University of London",
     ],
-    images: ["/Hackathon_snapshots/hacksecurex/1.png",
+    images: ["/Hackathon_snapshots/aitoolchallenge/1.png",
     "/Hackathon_snapshots/aitoolchallenge/2.png", 
     "/Hackathon_snapshots/aitoolchallenge/3.png", 
     "/Hackathon_snapshots/aitoolchallenge/4.png", 
