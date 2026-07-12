@@ -21,6 +21,7 @@ import AdvisoryBoard from "./pages/AdvisoryBoard";
 import HackathonPage from "./pages/HackathonPage";
 import ConferencePage from "./pages/ConferencePage";
 import CollaboratorsPage from "./pages/CollaboratorsPage";
+import OlympiadsPage from "./pages/OlympiadPage";
 import ExpertsPage from "./pages/ExpertsPage";
 import CMSpage from "./pages/CMSpage";
 import Team from "./pages/Team";
@@ -49,6 +50,7 @@ const App = () => (
             <Route path="/board" element={<AdvisoryBoard />} />
             <Route path="/hackathons/:slug" element={<HackathonPage />} />
             <Route path="/conferences/:slug" element={<ConferencePage />} />
+            <Route path="/olympiads/:slug" element={<OlympiadsPage />} />
             <Route path="/collaborators" element={<CollaboratorsPage />} />
             <Route path="/experts" element={<ExpertsPage />} />
             <Route path="/team" element={<Team />} />

@@ -343,9 +343,6 @@ const HackathonPage = () => {
             <Reveal>
               <div>
                 <p style={{ fontSize: '10px', letterSpacing: '0.15em', textTransform: 'uppercase', color: '#f59e0b', fontFamily: 'monospace', fontWeight: 700, marginBottom: '14px' }}>About the Event</p>
-                <h2 style={{ fontSize: 'clamp(1.7rem, 3.2vw, 2.6rem)', fontWeight: 900, lineHeight: 1.15, letterSpacing: '-0.025em', color: '#0f172a', marginBottom: '18px' }}>
-                  One Planet.<br />One Purpose.
-                </h2>
                 <p style={{ fontSize: '15px', lineHeight: 1.8, color: '#6b7280' }}>
                   {hackathon.description}
                 </p>
@@ -472,7 +469,7 @@ const HackathonPage = () => {
             }} />
             <span style={{ fontSize: '42px', display: 'block', marginBottom: '18px' }}>🌍</span>
             <h2 style={{ fontSize: 'clamp(1.5rem, 2.8vw, 2.2rem)', fontWeight: 900, letterSpacing: '-0.025em', color: '#0f172a', marginBottom: '10px' }}>
-              Ready to Build for the Planet?
+              Ready to Build?
             </h2>
             <p style={{ color: '#6b7280', marginBottom: '32px', lineHeight: 1.65, fontSize: '15px' }}>
               Join innovators, developers & sustainability enthusiasts from around the world.
