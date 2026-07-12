@@ -130,12 +130,12 @@ const Navbar = () => {
           </DropdownMenu>
 
           {/* CMS - plain link */}
-          <Link
+          {/* <Link
             to="/cms"
             className="text-foreground hover:text-saffron transition-colors font-medium"
           >
             CMS
-          </Link>
+          </Link> */}
 
           {/* Collaborators - plain link */}
           <Link
