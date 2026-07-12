@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { hackathons, conferences,aiChallengeEvents } from "@/lib/data";
-import { Calendar, Users, Award, ArrowRight, BookOpen, Globe, BarChart3, HeartPulse, Wallet, Cpu, Code, Mic2, Presentation } from "lucide-react";
+import { hackathons, conferences, aiChallengeEvents, olympiads } from "@/lib/data";
+import { Calendar, Users, Award, ArrowRight, BookOpen, Globe, BarChart3, HeartPulse, Wallet, Cpu, Code, Mic2, Presentation, Trophy } from "lucide-react";
 import { Link } from "react-router-dom";
 
 interface EventCardProps {
@@ -77,7 +77,7 @@ const EventCard = ({
 
 // Filter hackathons for specific events
 const hackathonEvents = hackathons.filter(h => 
-  h.slug.includes("oneearth") || h.slug.includes("hacksecure") || h.slug.includes("intellitech")
+  h.slug.includes("oneearth") || h.slug.includes("hacksecure") || h.slug.includes("intellitech") || h.slug.includes("hackagentaix")
 );
 
 const FlagshipEventsSection = () => {
@@ -198,6 +198,32 @@ const FlagshipEventsSection = () => {
                   </div>
                 </div>
               </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Olympiads Category */}
+        <div className="mb-16">
+          <div className="flex items-center justify-center gap-3 mb-8">
+            <div className="p-3 rounded-xl bg-yellow-400/20">
+              <Trophy className="h-6 w-6 text-yellow-400" />
+            </div>
+            <h3 className="text-2xl sm:text-3xl font-bold text-foreground">Olympiads</h3>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-1 gap-6 sm:gap-8 max-w-md mx-auto">
+            {olympiads.map((olympiad, index) => (
+              <EventCard
+                key={olympiad.slug}
+                title={olympiad.title}
+                date={olympiad.date}
+                prize={olympiad.prize}
+                teamSize="Individual"
+                mode={olympiad.mode}
+                color="bg-yellow-400"
+                delay={`${index * 0.1}s`}
+                url={olympiad.link}
+              />
             ))}
           </div>
         </div>
