@@ -113,6 +113,45 @@ const ImageCarousel: React.FC<{ images: string[] }> = ({ images }) => {
     return () => clearInterval(t);
   }, []);
 
+   if (images.length === 0) {
+    return (
+      <div
+        style={{
+          width: "100%",
+          maxWidth: "820px",
+          margin: "0 auto",
+        }}
+      >
+        <div
+          style={{
+            width: "100%",
+            aspectRatio: "16/9",
+            borderRadius: "20px",
+            border: "2px dashed #d1d5db",
+            background: "#f9fafb",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            flexDirection: "column",
+            color: "#6b7280",
+            boxShadow: "0 24px 60px rgba(0,0,0,0.08)",
+          }}
+        >
+          <div style={{ fontSize: "56px", marginBottom: "12px" }}>🖼️</div>
+          <div
+            style={{
+              fontSize: "28px",
+              fontWeight: 700,
+              color: "#374151",
+            }}
+          >
+            Coming Soon
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div style={{ position: 'relative', width: '100%', maxWidth: '820px', margin: '0 auto' }}>
       <div style={{

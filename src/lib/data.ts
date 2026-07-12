@@ -79,8 +79,34 @@ export const hackathons = [
     collaborators: [
       "Universidad Nacional del Altiplano de Puno (INCUNALAB)",
     ],
-    images: ["/ai-labs/images/AI_assemblies.avif"],
+    images: ["/Hackathon_snapshots/intellitech/1.jpeg",
+    "/Hackathon_snapshots/intellitech/2.jpeg", 
+    "/Hackathon_snapshots/intellitech/3.jpeg", 
+    "/Hackathon_snapshots/intellitech/4.jpeg", 
+    "/Hackathon_snapshots/intellitech/5.jpeg",
+    "/Hackathon_snapshots/intellitech/6.jpeg",
+    "/Hackathon_snapshots/intellitech/7.jpeg",
+    "/Hackathon_snapshots/intellitech/8.jpeg",
+    "/Hackathon_snapshots/intellitech/9.jpeg",
+  ],
     link: "https://www.intellitechhack.com/"
+  },
+  {
+    slug: "hackagentaix-autonomous-ai-challenge-2026",
+    title: "HackAgentAIx",
+    tagline: "The Autonomous AI Challenge 2026",
+    date: "30-31 July 2026",
+    mode: "Online (UK)",
+    duration: "48 Hours",
+    prize: "£1750",
+    organizer: "University of Essex",
+    description:
+      "A global 48-hour sprint for building autonomous AI agents that think, plan, and act with real-world impact.",
+    collaborators: [
+      "University of Essex",
+    ],
+    images: [],
+    link: "https://hackagentaix.vercel.app/"
   },
 ];
 
@@ -131,6 +157,21 @@ export const conferences = [
     focus: ["Networking", "Computing", "Data-driven technologies"],
     organizer: "Technical University of Iasi",
     link: "https://www.ici3t.com/"
+  }
+];
+
+export const olympiads = [
+  {
+    slug: "nailo-2026-2027",
+    title: "National AI Literacy Olympiad (NAILO) 2026-27",
+    short: "NAILO 2026-27",
+    date: "20 December 2026",
+    mode: "Online",
+    prize: "₹3 Lakh+",
+    organizer: "NAILO",
+    description:
+      "A national-level AI literacy olympiad for students from classes 6 to 12, focusing on logical thinking, AI awareness, and ethical understanding.",
+    link: "https://www.nailolympiad.com/"
   }
 ];
 

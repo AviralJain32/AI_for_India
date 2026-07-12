@@ -12,10 +12,13 @@ import {
   DropdownMenuItem,
   DropdownMenuLabel,
   DropdownMenuSeparator,
+  DropdownMenuSub,
+  DropdownMenuSubContent,
+  DropdownMenuSubTrigger,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-import { hackathons, conferences, aiChallengeEvents } from '@/lib/data';
+import { hackathons, conferences, aiChallengeEvents, olympiads } from '@/lib/data';
 
 const Navbar = () => {
   const { setTheme, theme } = useTheme();
@@ -31,15 +34,39 @@ const Navbar = () => {
   const toggleTheme = () => setTheme(theme === "dark" ? "light" : "dark");
   const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
 
-  const navLinks = [
-    { name: "About", href: "/about" },
-    { name: "Hackathons", href: "/hackathons", isDropdown: true },
-    { name: "AI & Emerging Tech Challenges", href: "/ai-challenges" },
-    { name: "Conferences", href: "/conferences", isDropdown: true },
-    { name: "CMS", href: "/cms" },
-    { name: "Collaborators", href: "/collaborators" },
-    { name: "Industry Experts", href: "/experts" },
-    { name: "Team", href: "/team" },
+  const eventSections = [
+    {
+      label: 'Hackathons',
+      items: hackathons.map((hackathon) => ({
+        title: hackathon.title,
+        date: hackathon.date,
+        href: `/hackathons/${hackathon.slug}`,
+      })),
+    },
+    {
+      label: 'AI & Emerging Tech Challenges',
+      items: aiChallengeEvents.map((challenge) => ({
+        title: challenge.title,
+        date: challenge.date,
+        href: `/hackathons/${challenge.slug}`,
+      })),
+    },
+    {
+      label: 'International Conferences',
+      items: conferences.map((conference) => ({
+        title: conference.short,
+        date: conference.date,
+        href: `/conferences/${conference.slug}`,
+      })),
+    },
+    {
+      label: 'Olympiads',
+      items: olympiads.map((olympiad) => ({
+        title: olympiad.short,
+        date: olympiad.date,
+        href: `/olympiads/${olympiad.slug}`,
+      })),
+    },
   ];
 
   return (
@@ -66,66 +93,39 @@ const Navbar = () => {
             About
           </Link>
 
-          {/* Hackathons Dropdown */}
+          {/* Events Dropdown */}
           <DropdownMenu>
             <DropdownMenuTrigger className="text-foreground hover:text-saffron transition-colors font-medium">
-              Hackathons
+              Events
             </DropdownMenuTrigger>
-            <DropdownMenuContent className="w-64 bg-white dark:bg-dark-navy text-foreground border border-foreground/10 shadow-xl">
-              <DropdownMenuLabel className="text-saffron">Hackathons</DropdownMenuLabel>
-              <DropdownMenuSeparator />
-              {hackathons.map((hackathon) => (
-                <DropdownMenuItem key={hackathon.slug} asChild>
-                  <Link to={`/hackathons/${hackathon.slug}`}>
-                    <div>
-                      <p className="font-semibold">{hackathon.title}</p>
-                      <p className="text-sm opacity-80">{hackathon.date} • {hackathon.prize}</p>
-                    </div>
-                  </Link>
-                </DropdownMenuItem>
-              ))}
-            </DropdownMenuContent>
-          </DropdownMenu>
-
-          {/* AI & Emerging Tech Challenges - plain link */}
-          <DropdownMenu>
-            <DropdownMenuTrigger className="text-foreground hover:text-saffron transition-colors font-medium">
-              AI & Emerging Tech Challenges
-            </DropdownMenuTrigger>
-            <DropdownMenuContent className="w-64 bg-white dark:bg-dark-navy text-foreground border border-foreground/10 shadow-xl">
-              <DropdownMenuLabel className="text-saffron">AI & Emerging Tech Challenges</DropdownMenuLabel>
-              <DropdownMenuSeparator />
-              {aiChallengeEvents.map((challenge) => (
-                <DropdownMenuItem key={challenge.slug} asChild>
-                  <Link to={`/hackathons/${challenge.slug}`}>
-                    <div>
-                      <p className="font-semibold">{challenge.title}</p>
-                      <p className="text-sm opacity-80">{challenge.date} • {challenge.prize}</p>
-                    </div>
-                  </Link>
-                </DropdownMenuItem>
-              ))}
-            </DropdownMenuContent>
-          </DropdownMenu>
-
-          {/* Conferences Dropdown */}
-          <DropdownMenu>
-            <DropdownMenuTrigger className="text-foreground hover:text-saffron transition-colors font-medium">
-              Conferences
-            </DropdownMenuTrigger>
-            <DropdownMenuContent className="w-64 bg-white dark:bg-dark-navy text-foreground border border-foreground/10 shadow-xl">
-              <DropdownMenuLabel className="text-saffron">Conferences</DropdownMenuLabel>
-              <DropdownMenuSeparator />
-              {conferences.map((conference) => (
-                <DropdownMenuItem key={conference.slug} asChild>
-                  <Link to={`/conferences/${conference.slug}`}>
-                    <div>
-                      <p className="font-semibold">{conference.short}</p>
-                      <p className="text-sm opacity-80">{conference.date}</p>
-                    </div>
-                  </Link>
-                </DropdownMenuItem>
-              ))}
+            <DropdownMenuContent className="w-[320px] bg-white dark:bg-dark-navy text-foreground border border-foreground/10 shadow-xl p-1">
+              <DropdownMenuLabel className="text-saffron px-3 py-2 text-sm">Events</DropdownMenuLabel>
+              <div className="space-y-1">
+                {eventSections.map((section) => (
+                  <DropdownMenuSub key={section.label}>
+                    <DropdownMenuSubTrigger className="flex cursor-pointer items-center justify-between rounded-md px-3 py-2 text-sm font-medium text-foreground hover:bg-accent">
+                      <span>{section.label}</span>
+                    </DropdownMenuSubTrigger>
+                    <DropdownMenuSubContent className="w-96 bg-white dark:bg-dark-navy text-foreground border border-foreground/10 shadow-xl p-1">
+                      {section.items.map((item) => (
+                        <DropdownMenuItem key={item.title} asChild>
+                          {item.href === '#' ? (
+                            <div className="rounded-md px-3 py-2 w-full flex flex-col gap-1">
+                              <p className="font-semibold text-sm break-words">{item.title}</p>
+                              <p className="text-xs opacity-70">{item.date}</p>
+                            </div>
+                          ) : (
+                            <Link to={item.href} className="rounded-md px-3 py-2 w-full flex flex-col gap-1">
+                              <p className="font-semibold text-sm break-words">{item.title}</p>
+                              <p className="text-xs opacity-70">{item.date}</p>
+                            </Link>
+                          )}
+                        </DropdownMenuItem>
+                      ))}
+                    </DropdownMenuSubContent>
+                  </DropdownMenuSub>
+                ))}
+              </div>
             </DropdownMenuContent>
           </DropdownMenu>
 
@@ -190,49 +190,46 @@ const Navbar = () => {
                 About
               </Link>
 
-              {/* Hackathons mobile submenu */}
-              <p className="font-semibold text-saffron">Hackathons</p>
-              {hackathons.map((hackathon) => (
-                <Link
-                  key={hackathon.slug}
-                  to={`/hackathons/${hackathon.slug}`}
-                  className="hover:text-saffron pl-4"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  {hackathon.title} — {hackathon.date}
-                </Link>
-              ))}
-
-              {/* AI & Emerging Tech Challenges */}
-              <Link
-                to="/ai-challenges"
-                className="hover:text-saffron py-2 font-medium"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                AI & Emerging Tech Challenges
-              </Link>
-
-              {/* Conferences mobile submenu */}
-              <p className="font-semibold text-saffron">Conferences</p>
-              {conferences.map((conference) => (
-                <Link
-                  key={conference.slug}
-                  to={`/conferences/${conference.slug}`}
-                  className="hover:text-saffron pl-4"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  {conference.short} — {conference.date}
-                </Link>
-              ))}
+              {/* Events mobile submenu */}
+              <div>
+                <p className="font-semibold text-saffron py-2">Events</p>
+                <div className="space-y-3">
+                  {eventSections.map((section) => (
+                    <div key={section.label}>
+                      <p className="font-medium text-foreground/80 px-2 py-1.5 text-sm">{section.label}</p>
+                      <div className="space-y-1">
+                        {section.items.map((item) => (
+                          item.href === '#' ? (
+                            <div key={item.title} className="px-6 py-1.5 text-foreground/70">
+                              <p className="font-medium text-sm">{item.title}</p>
+                              <p className="text-xs">{item.date}</p>
+                            </div>
+                          ) : (
+                            <Link
+                              key={item.title}
+                              to={item.href}
+                              className="block px-6 py-1.5 hover:text-saffron hover:bg-foreground/5 rounded-md"
+                              onClick={() => setIsMobileMenuOpen(false)}
+                            >
+                              <p className="font-medium text-sm">{item.title}</p>
+                              <p className="text-xs text-foreground/70">{item.date}</p>
+                            </Link>
+                          )
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
 
               {/* CMS */}
-              <Link
+              {/* <Link
                 to="/cms"
                 className="hover:text-saffron py-2 font-medium"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 CMS
-              </Link>
+              </Link> */}
 
               {/* Collaborators */}
               <Link
