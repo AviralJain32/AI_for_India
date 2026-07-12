@@ -1,10 +1,19 @@
 
 import React from 'react';
 import { Button } from "@/components/ui/button";
-import StaticImage from './StaticImage';
 import { Link } from 'react-router-dom';
+import ImageCaraousal from './ImageCaraousal';
 
-const HeroSection = () => {
+interface HeroSectionProps {
+  images?: {
+    src: string;
+    alt: string;
+  }[];
+}
+
+
+
+const HeroSection: React.FC<HeroSectionProps> = () => {
   return (
     <section className="min-h-[90vh] bg-deep-purple dark:bg-deep-purple relative overflow-hidden flex items-center">
       {/* Gradient background */}
