@@ -18,7 +18,7 @@ const Footer = () => {
                   <path d="M17.5 6.5h.01"></path>
                 </svg>
               </div> */}
-           <img src="/Logo.jpg" alt="Logo" height={30} width={40} className='rounded-lg'/>
+           <img src="/Logo.jpeg" alt="Logo" height={30} width={40} className='rounded-lg'/>
 
               <span className="text-xl font-bold">
                 {/* <span className="text-saffron">AI</span> */}

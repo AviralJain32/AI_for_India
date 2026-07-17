@@ -79,7 +79,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-2">
-          <img src="/Logo.jpg" alt="Logo" height={30} width={40} className="rounded-lg" />
+          <img src="/Logo.jpeg" alt="Logo" height={30} width={40} className="rounded-lg" />
           <span className="text-xl font-bold text-foreground">AFI Edutech</span>
         </Link>
 
