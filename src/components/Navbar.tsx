@@ -96,7 +96,7 @@ const Navbar = () => {
           {/* Events Dropdown */}
           <DropdownMenu>
             <DropdownMenuTrigger className="text-foreground hover:text-saffron transition-colors font-medium">
-              Events
+              R&D Events
             </DropdownMenuTrigger>
             <DropdownMenuContent className="w-[320px] bg-white dark:bg-dark-navy text-foreground border border-foreground/10 shadow-xl p-1">
               <DropdownMenuLabel className="text-saffron px-3 py-2 text-sm">Events</DropdownMenuLabel>
@@ -128,6 +128,13 @@ const Navbar = () => {
               </div>
             </DropdownMenuContent>
           </DropdownMenu>
+
+          <Link
+            to="/rd-projects"
+            className="text-foreground hover:text-saffron transition-colors font-medium"
+          >
+            R&D Projects
+          </Link>
 
           {/* CMS - plain link */}
           {/* <Link
@@ -221,6 +228,14 @@ const Navbar = () => {
                   ))}
                 </div>
               </div>
+
+              <Link
+                to="/rd-projects"
+                className="hover:text-saffron py-2 font-medium"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                R&D Projects
+              </Link>
 
               {/* CMS */}
               {/* <Link
