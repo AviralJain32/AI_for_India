@@ -81,7 +81,7 @@ const RDProjects = () => {
                 </p>
                 <div className="rounded-3xl overflow-hidden border border-slate-200 bg-slate-50">
                   <img
-                    src="https://images.unsplash.com/photo-1483058712412-4245e9b90334?auto=format&fit=crop&w=1400&q=80"
+                    src="/projects/CMS.png"
                     alt="Conference Management"
                     className="h-72 w-full object-cover"
                   />
@@ -117,7 +117,7 @@ const RDProjects = () => {
                 </p>
                 <div className="rounded-3xl overflow-hidden border border-slate-200 bg-slate-50">
                   <img
-                    src="https://images.unsplash.com/photo-1555949963-aa79dcee9818?auto=format&fit=crop&w=1400&q=80"
+                    src="/projects/Learning_Platform.png"
                     alt="E-Learning Platform"
                     className="h-72 w-full object-cover"
                   />
@@ -153,7 +153,7 @@ const RDProjects = () => {
                 </p>
                 <div className="rounded-3xl overflow-hidden border border-slate-200 bg-slate-50">
                   <img
-                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1400&q=80"
+                    src="/projects/Olympiad.png"
                     alt="Olympiad Examination Platform"
                     className="h-72 w-full object-cover"
                   />
@@ -186,6 +186,13 @@ const RDProjects = () => {
 
             <div className="mt-10 space-y-10">
               <div className="rounded-3xl bg-slate-100 p-8 shadow-sm ring-1 ring-slate-200">
+                <div className="mb-6 overflow-hidden rounded-2xl border border-slate-200 bg-slate-50">
+                  <img
+                    src="/projects/Bot.png"
+                    alt="Edu-Bot AI Teaching Assistant"
+                    className="h-72 w-full object-cover"
+                  />
+                </div>
                 <h3 className="text-2xl font-semibold text-slate-900">Edu-Bot: AI Teaching Assistant</h3>
                 <p className="mt-4 text-slate-700 leading-7">
                   Edu-Bot is an intelligent AI-powered teaching assistant developed to transform traditional classrooms into AI-ready learning environments by supporting teachers and enhancing student engagement through conversational intelligence, interactive teaching, and personalized learning experiences.
@@ -199,6 +206,13 @@ const RDProjects = () => {
               </div>
 
               <div className="rounded-3xl bg-slate-100 p-8 shadow-sm ring-1 ring-slate-200">
+                <div className="mb-6 overflow-hidden rounded-2xl border border-slate-200 bg-slate-50">
+                  <img
+                    src="/projects/GastroAI.png"
+                    alt="Gastro-Vision AI"
+                    className="h-72 w-full object-cover"
+                  />
+                </div>
                 <h3 className="text-2xl font-semibold text-slate-900">Gastro-Vision AI</h3>
                 <p className="mt-4 text-slate-700 leading-7">
                   GastroVision AI is an intelligent deep learning–based medical screening platform designed for the early diagnosis, risk stratification, and clinical management of gastric cancer by integrating multimodal medical data into a unified AI-powered framework.
