@@ -5,38 +5,17 @@ import Footer from '@/components/Footer';
 const teamMembers = [
   {
     name: 'Aayushi Samantsinghar',
-    role: 'Event Strategist',
+    role: 'Head of Operations',
     photo: "/team/aayushi.png",
     color: '#FF6B35',
     bio: 'Crafting unforgettable event experiences that align with vision and impact.',
   },
   {
     name: 'Debasis Maharana',
-    role: 'Event Coordinator',
+    role: 'Operations Manager',
     photo: "/team/debasis.png",
     color: '#7C3AED',
     bio: 'Orchestrating every detail to ensure seamless execution from start to finish.',
-  },
-  {
-    name: 'Santosh Kumar Senapati',
-    role: 'Technical Manager',
-    photo: "/team/santosh.png",
-    color: '#0EA5E9',
-    bio: 'Building the technical backbone that powers every AI initiative we run.',
-  },
-  {
-    name: 'Bibhu Prasad Lenka',
-    role: 'Event Technologist',
-    photo: "/team/bibhu.png",
-    color: '#10B981',
-    bio: 'Bridging technology and live events to create immersive digital experiences.',
-  },
-  {
-    name: 'Abhijit Mohanty',
-    role: 'Content Manager',
-    photo: "/team/abhijit.png",
-    color: '#F59E0B',
-    bio: 'Telling the story of AI for India through powerful, resonant narratives.',
   },
   {
     name: 'Tanishq',
@@ -46,11 +25,46 @@ const teamMembers = [
     bio: 'Keeping the engine running smoothly behind every project and initiative.',
   },
   {
+    name: 'Bibhu Prasad Lenka',
+    role: 'Event Technology Intern',
+    photo: "/team/bibhu.png",
+    color: '#10B981',
+    bio: 'Bridging technology and live events to create immersive digital experiences.',
+  },
+  {
     name: 'Tanvi',
-    role: ' Strategy and Growth (Intern)',
+    role: 'Growth & Strategy Intern',
     photo: "/team/tanvi.jpeg",
     color: '#6366F1',
     bio: 'Shaping how we speak, connect, and resonate with audiences across India.',
+  },
+  {
+    name: 'Santosh Kumar Senapati',
+    role: 'Marketing & Communication Intern',
+    photo: "/team/santosh.png",
+    color: '#0EA5E9',
+    bio: 'Building the technical backbone that powers every AI initiative we run.',
+  },
+  {
+    name: 'Abhijit Mohanty',
+    role: 'Marketing & Communication Intern',
+    photo: "/team/abhijit.png",
+    color: '#F59E0B',
+    bio: 'Telling the story of AI for India through powerful, resonant narratives.',
+  },
+  {
+    name: 'Ayusman',
+    role: 'Digital Content Intern',
+    photo: "/team/ayusman.png",
+    color: '#14B8A6',
+    bio: 'Crafting engaging digital content that brings the AI for India story to life.',
+  },
+  {
+    name: 'Ayesha',
+    role: 'Web & Creative Design Intern',
+    photo: "/team/ayesha.png",
+    color: '#F43F5E',
+    bio: 'Designing thoughtful, creative digital experiences for the AI for India platform.',
   },
 ];
 
