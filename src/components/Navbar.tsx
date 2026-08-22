@@ -152,6 +152,13 @@ const Navbar = () => {
             Collaborators
           </Link>
 
+          <Link
+            to="/partner-schools"
+            className="text-foreground hover:text-saffron transition-colors font-medium"
+          >
+            Partner Schools
+          </Link>
+
           {/* Industry Experts - plain link */}
           <Link
             to="/experts"
@@ -253,6 +260,14 @@ const Navbar = () => {
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Collaborators
+              </Link>
+
+              <Link
+                to="/partner-schools"
+                className="hover:text-saffron py-2"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Partner Schools
               </Link>
 
               {/* Industry Experts */}
