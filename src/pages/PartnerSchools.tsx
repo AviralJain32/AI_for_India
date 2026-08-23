@@ -12,6 +12,55 @@ const focusAreas = [
   { title: 'Future-Ready Skills', icon: Users, color: '#0891b2' },
 ];
 
+const partnerSchools = [
+  {
+    name: 'Happy English School, Sharad Vihar',
+    shortName: 'Happy English School',
+    logo: '/NAILO-partners/HES_School.svg',
+    website: 'https://www.hes.edu.in/',
+    websiteLabel: 'Welcome to HES',
+  },
+  {
+    name: 'Bharat National Public School',
+    shortName: 'Bharat National Public School',
+    logo: '/NAILO-partners/BNPC_school.png',
+    website: 'https://bnpsramvihar.edu.in/',
+    websiteLabel: 'Visit BNPS website',
+  },
+];
+
+const PartnerSchoolDirectory = () => {
+  return (
+    <section className="directory-section" aria-label="NAILO partner schools">
+      <div className="section-inner">
+        <div className="directory-heading">
+          <div>
+            <p className="section-kicker">Our Network</p>
+            <h2>Meet our <em>partner schools.</em></h2>
+          </div>
+          <p>Schools building a more AI-literate and future-ready India with NAILO.</p>
+        </div>
+        <div className="school-grid">
+          {partnerSchools.map((school) => (
+            <article className="school-card" key={school.name}>
+              <div className="school-card-logo-wrap">
+                <img src={school.logo} alt={`${school.name} logo`} className="school-card-logo" />
+              </div>
+              <div className="school-card-content">
+                <p className="school-card-kicker">Official NAILO Partner School</p>
+                <h3>{school.name}</h3>
+                <a className="school-card-link" href={school.website} target="_blank" rel="noopener noreferrer">
+                  Visit school website <ArrowUpRight size={17} />
+                </a>
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
 const PartnerSchools = () => (
   <div className="partner-page">
     <Navbar />
@@ -21,36 +70,17 @@ const PartnerSchools = () => (
         <div className="hero-pattern" />
         <div className="hero-content">
           <div className="eyebrow"><span className="eyebrow-dot" /> NAILO Partner School Network</div>
-          <div className="school-logo-wrap">
-            <img src="/NAILO-partners/HES_School.svg" alt="Happy English School, Sharad Vihar logo" className="school-logo" />
-          </div>
-          <p className="welcome-line">We are proud to welcome</p>
-          <h1>Happy English School,<br /><span>Sharad Vihar</span></h1>
+          <h1>Schools shaping the<br /><span>future together.</span></h1>
           <p className="hero-copy">
-            Together, we are creating opportunities for students to become AI-literate,
+            Meet the schools joining NAILO to help students become AI-literate,
             future-ready, and innovation-driven learners.
           </p>
-          <div className="family-tag"><Sparkles size={17} /> Welcome to the NAILO Family</div>
+          <div className="family-tag"><Sparkles size={17} /> Growing the NAILO family</div>
         </div>
         <div className="hero-mark" aria-hidden="true">AI<span>+</span></div>
       </section>
 
-      <section className="school-intro">
-        <div className="section-inner intro-grid">
-          <div>
-            <p className="section-kicker">Official NAILO Partner School</p>
-            <h2>A new chapter in<br /><em>future-ready learning.</em></h2>
-          </div>
-          <div className="intro-copy">
-            <div className="session-label">Academic Session <strong>2026-27</strong></div>
-            <p>
-              Happy English School, Sharad Vihar has joined the National AI Literacy Olympiad
-              (NAILO) as an Official NAILO Partner School, reflecting its commitment to nurturing
-              future-ready learners through AI Literacy and Computational Thinking.
-            </p>
-          </div>
-        </div>
-      </section>
+      <PartnerSchoolDirectory />
 
       <section className="focus-section">
         <div className="section-inner">
@@ -90,8 +120,6 @@ const PartnerSchools = () => (
       .partner-hero { min-height: 650px; padding: 150px 8vw 90px; position: relative; display: flex; align-items: center; background: #eaf1ec; overflow: hidden; }
       .hero-pattern { position: absolute; inset: 0; opacity: .45; background-image: linear-gradient(30deg, transparent 48%, rgba(21,37,31,.06) 49%, transparent 50%), linear-gradient(150deg, transparent 48%, rgba(21,37,31,.06) 49%, transparent 50%); background-size: 90px 90px; }
       .hero-content { position: relative; max-width: 820px; z-index: 1; }
-      .school-logo-wrap { width: 94px; height: 94px; margin-bottom: 25px; padding: 11px; display: grid; place-items: center; background: #fff; border: 1px solid rgba(24,116,92,.16); box-shadow: 0 12px 28px rgba(21,37,31,.08); }
-      .school-logo { width: 100%; height: 100%; object-fit: contain; }
       .eyebrow, .family-tag, .session-label, .school-badge { display: inline-flex; align-items: center; gap: 9px; font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
       .eyebrow { color: #18745c; margin-bottom: 28px; }
       .eyebrow-dot { width: 8px; height: 8px; border-radius: 50%; background: #f08a4b; box-shadow: 0 0 0 5px rgba(240,138,75,.16); }
@@ -103,6 +131,20 @@ const PartnerSchools = () => (
       .family-tag { padding: 12px 17px; border: 1px solid rgba(24,116,92,.25); color: #18745c; border-radius: 4px; letter-spacing: .07em; }
       .hero-mark { position: absolute; right: 9vw; bottom: 11%; color: rgba(24,116,92,.13); font: 700 clamp(7rem, 20vw, 20rem)/.8 'Space Grotesk', sans-serif; letter-spacing: -.12em; transform: rotate(-8deg); }
       .hero-mark span { color: rgba(232,117,61,.2); }
+      .directory-section { padding: 110px 8vw; background: #f5f7f4; }
+      .directory-heading { display: flex; align-items: end; justify-content: space-between; gap: 40px; margin-bottom: 45px; }
+      .directory-heading h2 { font-size: clamp(2.5rem, 5vw, 4.5rem); }
+      .directory-heading > p { max-width: 340px; margin: 0 0 5px; color: #63766c; line-height: 1.7; }
+      .school-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+      .school-card { display: grid; grid-template-columns: 190px 1fr; min-height: 250px; background: #fff; border: 1px solid #dce5df; transition: transform .25s, box-shadow .25s; }
+      .school-card:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(21,37,31,.1); }
+      .school-card-logo-wrap { display: grid; place-items: center; padding: 25px; background: #eaf1ec; }
+      .school-card-logo { width: 100%; height: 145px; object-fit: contain; }
+      .school-card-content { display: flex; flex-direction: column; align-items: flex-start; padding: 30px 25px; }
+      .school-card-kicker { margin: 0 0 15px; color: #18745c; font-size: 10px; font-weight: 700; letter-spacing: .1em; line-height: 1.4; text-transform: uppercase; }
+      .school-card h3 { margin: 0; color: #20342c; font: 600 22px/1.2 'Space Grotesk', sans-serif; }
+      .school-card-link { display: inline-flex; align-items: center; gap: 7px; margin-top: auto; padding-top: 24px; color: #d96532; font-size: 12px; font-weight: 700; text-decoration: none; }
+      .school-card-link:hover { color: #18745c; }
       .section-inner { max-width: 1160px; margin: 0 auto; }
       .school-intro { padding: 112px 8vw; background: #fff; }
       .intro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 9vw; align-items: center; }
@@ -128,7 +170,7 @@ const PartnerSchools = () => (
       .closing-section p:not(.section-kicker) { max-width: 500px; margin: 25px auto 32px; color: #b8cec0; line-height: 1.7; }
       .school-badge { color: #d5e6da; letter-spacing: .06em; }
       .school-badge span { padding: 7px 10px; background: #f08a4b; color: #152f27; font-size: 10px; }
-      @media (max-width: 700px) { .partner-hero { min-height: 600px; padding: 130px 24px 70px; align-items: flex-start; } .hero-mark { right: -30px; bottom: 9%; } .hero-copy { font-size: 16px; } .school-logo-wrap { width: 78px; height: 78px; margin-bottom: 21px; } .school-intro, .focus-section, .closing-section { padding: 76px 24px; } .intro-grid, .focus-grid { grid-template-columns: 1fr; gap: 35px; } .focus-heading { display: block; } .focus-heading > p { margin-top: 24px; } .focus-card { min-height: 170px; } }
+      @media (max-width: 700px) { .partner-hero { min-height: 600px; padding: 130px 24px 70px; align-items: flex-start; } .hero-mark { right: -30px; bottom: 9%; } .hero-copy { font-size: 16px; } .directory-section, .school-intro, .focus-section, .closing-section { padding: 76px 24px; } .directory-heading { display: block; } .directory-heading > p { margin-top: 24px; } .school-grid { grid-template-columns: 1fr; } .school-card { grid-template-columns: 115px 1fr; min-height: 210px; } .school-card-logo-wrap { padding: 14px; } .school-card-logo { height: 115px; } .school-card-content { padding: 24px 18px; } .school-card h3 { font-size: 18px; } .school-intro, .focus-section, .closing-section { padding: 76px 24px; } .intro-grid, .focus-grid { grid-template-columns: 1fr; gap: 35px; } .focus-heading { display: block; } .focus-heading > p { margin-top: 24px; } .focus-card { min-height: 170px; } }
     `}</style>
     <Footer />
   </div>
