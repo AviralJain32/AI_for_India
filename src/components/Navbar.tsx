@@ -133,7 +133,7 @@ const Navbar = () => {
             to="/rd-projects"
             className="text-foreground hover:text-saffron transition-colors font-medium"
           >
-            R&D Projects
+            R&I Projects
           </Link>
 
           {/* CMS - plain link */}
@@ -152,12 +152,12 @@ const Navbar = () => {
             Collaborators
           </Link>
 
-          <Link
+          {/* <Link
             to="/partner-schools"
             className="text-foreground hover:text-saffron transition-colors font-medium"
           >
             Partner Schools
-          </Link>
+          </Link> */}
 
           {/* Industry Experts - plain link */}
           <Link
