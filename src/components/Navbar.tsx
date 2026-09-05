@@ -92,17 +92,12 @@ const Navbar = () => {
           >
             About
           </Link>
-          <Link
-            to="/rd-projects"
-            className="text-foreground hover:text-saffron transition-colors font-medium"
-          >
-            R&I Projects
-          </Link>
+          
 
           {/* Events Dropdown */}
           <DropdownMenu>
             <DropdownMenuTrigger className="text-foreground hover:text-saffron transition-colors font-medium">
-              R&D Events
+              R&D projects
             </DropdownMenuTrigger>
             <DropdownMenuContent className="w-[320px] bg-white dark:bg-dark-navy text-foreground border border-foreground/10 shadow-xl p-1">
               <DropdownMenuLabel className="text-saffron px-3 py-2 text-sm">Events</DropdownMenuLabel>
@@ -135,7 +130,12 @@ const Navbar = () => {
             </DropdownMenuContent>
           </DropdownMenu>
 
-         
+         <Link
+            to="/rd-projects"
+            className="text-foreground hover:text-saffron transition-colors font-medium"
+          >
+            R&I events
+          </Link>
           {/* CMS - plain link */}
           {/* <Link
             to="/cms"
