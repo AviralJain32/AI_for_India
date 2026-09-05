@@ -2,14 +2,15 @@ import React, { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
+const director = {
+  name: 'Dr. Prerna Mann',
+  role: 'Director',
+  photo: '/team/prerna-mann.png',
+  color: '#6C63FF',
+  bio: 'Leading with vision and excellence to drive meaningful impact and organizational growth.',
+};
+
 const teamMembers = [
-//   {
-//   name: 'Dr. Prerna Mann',
-//   role: 'Director',
-//   photo: "/team/prerna-mann.jpeg",
-//   color: '#6C63FF',
-//   bio: 'Leading with vision and excellence to drive meaningful impact and organizational growth.',
-// },
   {
     name: 'Aayushi Samantsinghar',
     role: 'Head of Operations',
@@ -96,6 +97,7 @@ interface TeamMember {
 
 const Team: React.FC = () => {
   const [members] = useState<TeamMember[]>(teamMembers);
+  const dirRgb = hexToRgb(director.color);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-gray-100 text-gray-900">
@@ -153,6 +155,66 @@ const Team: React.FC = () => {
               Meet the minds behind strategy, technology, content and event execution —
               making our AI initiatives memorable and impactful across the nation.
             </p>
+          </div>
+        </section>
+
+        {/* Director Spotlight */}
+        <section className="pb-16">
+          <div className="container mx-auto px-4">
+            <div
+              className="relative overflow-hidden rounded-3xl max-w-4xl mx-auto flex flex-col sm:flex-row items-center sm:items-stretch"
+              style={{
+                background: 'linear-gradient(135deg, rgba(255,255,255,0.97) 0%, rgba(248,250,252,0.97) 100%)',
+                border: `1px solid rgba(${dirRgb.r},${dirRgb.g},${dirRgb.b},0.2)`,
+                boxShadow: `0 20px 50px rgba(${dirRgb.r},${dirRgb.g},${dirRgb.b},0.15)`,
+              }}
+            >
+              {/* Photo */}
+              <div className="relative w-full sm:w-72 h-72 flex-shrink-0 overflow-hidden">
+                {director.photo ? (
+                  <img
+                    src={director.photo}
+                    alt={director.name}
+                    className="w-full h-full object-cover object-top"
+                  />
+                ) : (
+                  <div
+                    className="w-full h-full flex items-center justify-center text-6xl font-black"
+                    style={{
+                      background: `linear-gradient(135deg, rgba(${dirRgb.r},${dirRgb.g},${dirRgb.b},0.15), rgba(${dirRgb.r},${dirRgb.g},${dirRgb.b},0.05))`,
+                      color: director.color,
+                    }}
+                  >
+                    {getInitials(director.name)}
+                  </div>
+                )}
+                <div
+                  className="absolute top-0 left-0 right-0 h-1"
+                  style={{ background: `linear-gradient(90deg, ${director.color}, transparent)` }}
+                />
+              </div>
+
+              {/* Content */}
+              <div className="px-8 py-8 flex flex-col justify-center text-center sm:text-left">
+                <div
+                  className="inline-flex self-center sm:self-start items-center gap-2 text-[11px] font-bold uppercase tracking-[0.25em] px-4 py-1.5 rounded-full mb-4"
+                  style={{
+                    background: `rgba(${dirRgb.r},${dirRgb.g},${dirRgb.b},0.12)`,
+                    color: director.color,
+                  }}
+                >
+                  {director.role}
+                </div>
+
+                <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-3 leading-tight">
+                  {director.name}
+                </h2>
+
+                <p className="text-base leading-relaxed text-gray-600 max-w-md">
+                  {director.bio}
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 
