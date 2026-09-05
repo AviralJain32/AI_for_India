@@ -3,6 +3,13 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 const teamMembers = [
+//   {
+//   name: 'Dr. Prerna Mann',
+//   role: 'Director',
+//   photo: "/team/prerna-mann.jpeg",
+//   color: '#6C63FF',
+//   bio: 'Leading with vision and excellence to drive meaningful impact and organizational growth.',
+// },
   {
     name: 'Aayushi Samantsinghar',
     role: 'Head of Operations',

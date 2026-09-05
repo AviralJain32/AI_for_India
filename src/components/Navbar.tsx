@@ -92,6 +92,12 @@ const Navbar = () => {
           >
             About
           </Link>
+          <Link
+            to="/rd-projects"
+            className="text-foreground hover:text-saffron transition-colors font-medium"
+          >
+            R&I Projects
+          </Link>
 
           {/* Events Dropdown */}
           <DropdownMenu>
@@ -129,13 +135,7 @@ const Navbar = () => {
             </DropdownMenuContent>
           </DropdownMenu>
 
-          <Link
-            to="/rd-projects"
-            className="text-foreground hover:text-saffron transition-colors font-medium"
-          >
-            R&I Projects
-          </Link>
-
+         
           {/* CMS - plain link */}
           {/* <Link
             to="/cms"
